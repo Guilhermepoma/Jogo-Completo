@@ -29,21 +29,29 @@ public class Player : MonoBehaviour
     void Move()
     {
         float teclas = Input.GetAxis("Horizontal");
-        rigd.linearVelocity = new Vector2(teclas * speed, rigd.linearVelocity.y); // corrigido: velocity
+        rigd.linearVelocity = new Vector2(teclas * speed, rigd.linearVelocity.y);
 
-        if (teclas > 0 && isGround)
+        // Flip independente de estar no chão
+        if (teclas > 0)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0); // corrigido: Vector3
-            anim.SetInteger("transition", 1);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
-        else if (teclas < 0 && isGround)
+        else if (teclas < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
-            anim.SetInteger("transition", 1);
         }
-        else if (teclas == 0 && isGround)
+
+        // Animações
+        if (isGround)
         {
-            anim.SetInteger("transition", 0);
+            if (Mathf.Abs(teclas) > 0)
+                anim.SetInteger("transitions", 1); // andando
+            else
+                anim.SetInteger("transitions", 0); // parado
+        }
+        else
+        {
+            anim.SetInteger("transitions", 2); // pulando
         }
     }
 
@@ -52,7 +60,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && isGround)
         {
             rigd.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            anim.SetInteger("transition", 2);
+            anim.SetInteger("transitions", 2);
             isGround = false;
         }
     }
