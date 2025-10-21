@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rat_enemy_Gesture2_0: -288029597714070625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
