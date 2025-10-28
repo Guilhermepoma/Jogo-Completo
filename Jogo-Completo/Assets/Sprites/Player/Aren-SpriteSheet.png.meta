@@ -1,0 +1,3316 @@
+fileFormatVersion: 2
+guid: 9bb12b75ec350784b8db644e9584e999
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3619277876176064368
+    second: Aren-SpriteSheet_0
+  - first:
+      213: 3299382894361318867
+    second: Aren-SpriteSheet_1
+  - first:
+      213: 8940216347835578948
+    second: Aren-SpriteSheet_2
+  - first:
+      213: 5122506195279938887
+    second: Aren-SpriteSheet_3
+  - first:
+      213: 2922190017488437040
+    second: Aren-SpriteSheet_4
+  - first:
+      213: -2499068658590905738
+    second: Aren-SpriteSheet_5
+  - first:
+      213: -2005598041647206011
+    second: Aren-SpriteSheet_6
+  - first:
+      213: -613317300669121311
+    second: Aren-SpriteSheet_7
+  - first:
+      213: 5794590929337900834
+    second: Aren-SpriteSheet_8
+  - first:
+      213: 3648802660578008941
+    second: Aren-SpriteSheet_9
+  - first:
+      213: -8090870812505625092
+    second: Aren-SpriteSheet_10
+  - first:
+      213: -5346953981449459905
+    second: Aren-SpriteSheet_11
+  - first:
+      213: 6877352001074785653
+    second: Aren-SpriteSheet_12
+  - first:
+      213: -4480094467376005822
+    second: Aren-SpriteSheet_13
+  - first:
+      213: -7169618141619315524
+    second: Aren-SpriteSheet_14
+  - first:
+      213: 2264823430602218515
+    second: Aren-SpriteSheet_15
+  - first:
+      213: 5381570685967571322
+    second: Aren-SpriteSheet_16
+  - first:
+      213: -7583692151549542585
+    second: Aren-SpriteSheet_17
+  - first:
+      213: -3308656225113967572
+    second: Aren-SpriteSheet_18
+  - first:
+      213: 1683773439729194484
+    second: Aren-SpriteSheet_19
+  - first:
+      213: 667216846139351819
+    second: Aren-SpriteSheet_20
+  - first:
+      213: 9197481987875951628
+    second: Aren-SpriteSheet_21
+  - first:
+      213: -6845541437490956929
+    second: Aren-SpriteSheet_22
+  - first:
+      213: 1837942933075429796
+    second: Aren-SpriteSheet_23
+  - first:
+      213: -4743012696775134671
+    second: Aren-SpriteSheet_24
+  - first:
+      213: 6327571316742920893
+    second: Aren-SpriteSheet_25
+  - first:
+      213: -8583087779410621354
+    second: Aren-SpriteSheet_26
+  - first:
+      213: 1765750036391931057
+    second: Aren-SpriteSheet_27
+  - first:
+      213: 8050659817832536632
+    second: Aren-SpriteSheet_28
+  - first:
+      213: -135071237709478742
+    second: Aren-SpriteSheet_29
+  - first:
+      213: 2201146530639545075
+    second: Aren-SpriteSheet_30
+  - first:
+      213: -8680005071692522493
+    second: Aren-SpriteSheet_31
+  - first:
+      213: 4337298703443120440
+    second: Aren-SpriteSheet_32
+  - first:
+      213: -8236984779134843753
+    second: Aren-SpriteSheet_33
+  - first:
+      213: 3110340055295005102
+    second: Aren-SpriteSheet_34
+  - first:
+      213: 8676550286807061255
+    second: Aren-SpriteSheet_35
+  - first:
+      213: 4988033822696028346
+    second: Aren-SpriteSheet_36
+  - first:
+      213: -298212904982195396
+    second: Aren-SpriteSheet_37
+  - first:
+      213: -695501196819060458
+    second: Aren-SpriteSheet_38
+  - first:
+      213: -1567510489969976150
+    second: Aren-SpriteSheet_39
+  - first:
+      213: -2066921949663395836
+    second: Aren-SpriteSheet_40
+  - first:
+      213: -1997813563786230785
+    second: Aren-SpriteSheet_41
+  - first:
+      213: -1765130658110806994
+    second: Aren-SpriteSheet_42
+  - first:
+      213: -727284891020863014
+    second: Aren-SpriteSheet_43
+  - first:
+      213: 3769023482119277540
+    second: Aren-SpriteSheet_44
+  - first:
+      213: 3944064366768649494
+    second: Aren-SpriteSheet_45
+  - first:
+      213: -2364136367045386057
+    second: Aren-SpriteSheet_46
+  - first:
+      213: 7770837372091012586
+    second: Aren-SpriteSheet_47
+  - first:
+      213: -9093372680220267916
+    second: Aren-SpriteSheet_48
+  - first:
+      213: 6657480210221974730
+    second: Aren-SpriteSheet_49
+  - first:
+      213: 1690570316885862006
+    second: Aren-SpriteSheet_50
+  - first:
+      213: -8724711119676869725
+    second: Aren-SpriteSheet_51
+  - first:
+      213: 3988170020656843490
+    second: Aren-SpriteSheet_52
+  - first:
+      213: 2713308395559609138
+    second: Aren-SpriteSheet_53
+  - first:
+      213: -3287384746539841711
+    second: Aren-SpriteSheet_54
+  - first:
+      213: 2481702830605822301
+    second: Aren-SpriteSheet_55
+  - first:
+      213: -2394986146914443584
+    second: Aren-SpriteSheet_56
+  - first:
+      213: 1662568135085196252
+    second: Aren-SpriteSheet_57
+  - first:
+      213: -8449162038929017420
+    second: Aren-SpriteSheet_58
+  - first:
+      213: -1501386437497331536
+    second: Aren-SpriteSheet_59
+  - first:
+      213: -1167438476601732128
+    second: Aren-SpriteSheet_60
+  - first:
+      213: -370615817494046049
+    second: Aren-SpriteSheet_61
+  - first:
+      213: -4610969998375256812
+    second: Aren-SpriteSheet_62
+  - first:
+      213: -1056359935336611503
+    second: Aren-SpriteSheet_63
+  - first:
+      213: 8890574925076398349
+    second: Aren-SpriteSheet_64
+  - first:
+      213: 5008571232109184886
+    second: Aren-SpriteSheet_65
+  - first:
+      213: 2840298699371123523
+    second: Aren-SpriteSheet_66
+  - first:
+      213: -7569279494545552821
+    second: Aren-SpriteSheet_67
+  - first:
+      213: -625702961297003470
+    second: Aren-SpriteSheet_68
+  - first:
+      213: 6505067573702985773
+    second: Aren-SpriteSheet_69
+  - first:
+      213: -4011726747385463088
+    second: Aren-SpriteSheet_70
+  - first:
+      213: 1411078228453974594
+    second: Aren-SpriteSheet_71
+  - first:
+      213: 3407505021018580353
+    second: Aren-SpriteSheet_72
+  - first:
+      213: -5723404990515850351
+    second: Aren-SpriteSheet_73
+  - first:
+      213: -3243385698649403680
+    second: Aren-SpriteSheet_74
+  - first:
+      213: 378450191702455684
+    second: Aren-SpriteSheet_75
+  - first:
+      213: -4630500871653842957
+    second: Aren-SpriteSheet_76
+  - first:
+      213: 8926608726475806630
+    second: Aren-SpriteSheet_77
+  - first:
+      213: -916112320923175272
+    second: Aren-SpriteSheet_78
+  - first:
+      213: -8016427027470006319
+    second: Aren-SpriteSheet_79
+  - first:
+      213: -8567093999207672494
+    second: Aren-SpriteSheet_80
+  - first:
+      213: 5038899538512475873
+    second: Aren-SpriteSheet_81
+  - first:
+      213: -4473768640562366113
+    second: Aren-SpriteSheet_82
+  - first:
+      213: 8078452680799727707
+    second: Aren-SpriteSheet_83
+  - first:
+      213: -923853662209449291
+    second: Aren-SpriteSheet_84
+  - first:
+      213: 5719577401667318309
+    second: Aren-SpriteSheet_85
+  - first:
+      213: 2895193221321300721
+    second: Aren-SpriteSheet_86
+  - first:
+      213: 7273054191686679762
+    second: Aren-SpriteSheet_87
+  - first:
+      213: -6908366952569797604
+    second: Aren-SpriteSheet_88
+  - first:
+      213: -7298536635042213486
+    second: Aren-SpriteSheet_89
+  - first:
+      213: -8034701361372096451
+    second: Aren-SpriteSheet_90
+  - first:
+      213: -1891185511554163184
+    second: Aren-SpriteSheet_91
+  - first:
+      213: 1819764676639066269
+    second: Aren-SpriteSheet_92
+  - first:
+      213: 1529558907382417507
+    second: Aren-SpriteSheet_93
+  - first:
+      213: 6754029914228461704
+    second: Aren-SpriteSheet_94
+  - first:
+      213: -9068301971931440988
+    second: Aren-SpriteSheet_95
+  - first:
+      213: -5525661279005355025
+    second: Aren-SpriteSheet_96
+  - first:
+      213: 8367584458573287270
+    second: Aren-SpriteSheet_97
+  - first:
+      213: -2610991814093868488
+    second: Aren-SpriteSheet_98
+  - first:
+      213: 1494917291716310653
+    second: Aren-SpriteSheet_99
+  - first:
+      213: 6511010178833176604
+    second: Aren-SpriteSheet_100
+  - first:
+      213: -3823227362489542418
+    second: Aren-SpriteSheet_101
+  - first:
+      213: 3527407672099234354
+    second: Aren-SpriteSheet_102
+  - first:
+      213: -3749879600685778260
+    second: Aren-SpriteSheet_103
+  - first:
+      213: -595618615645511600
+    second: Aren-SpriteSheet_104
+  - first:
+      213: 5897403592127300604
+    second: Aren-SpriteSheet_105
+  - first:
+      213: -8874602601920943101
+    second: Aren-SpriteSheet_106
+  - first:
+      213: 805282449320670172
+    second: Aren-SpriteSheet_107
+  - first:
+      213: -7558182204697094796
+    second: Aren-SpriteSheet_108
+  - first:
+      213: 6333140114413253479
+    second: Aren-SpriteSheet_109
+  - first:
+      213: 8827214826825029522
+    second: Aren-SpriteSheet_110
+  - first:
+      213: -6117918926484390547
+    second: Aren-SpriteSheet_111
+  - first:
+      213: 1746448996160293138
+    second: Aren-SpriteSheet_112
+  - first:
+      213: -6536711339647296346
+    second: Aren-SpriteSheet_113
+  - first:
+      213: -5884762932823783725
+    second: Aren-SpriteSheet_114
+  - first:
+      213: -5321193926189800554
+    second: Aren-SpriteSheet_115
+  - first:
+      213: -5893218987455478460
+    second: Aren-SpriteSheet_116
+  - first:
+      213: 6333751447270963449
+    second: Aren-SpriteSheet_117
+  - first:
+      213: -6182165824206780234
+    second: Aren-SpriteSheet_118
+  - first:
+      213: 8869338461704694753
+    second: Aren-SpriteSheet_119
+  - first:
+      213: -2383343193001292954
+    second: Aren-SpriteSheet_120
+  - first:
+      213: 7265913401475210259
+    second: Aren-SpriteSheet_121
+  - first:
+      213: -7005230501064315189
+    second: Aren-SpriteSheet_122
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 854
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090781782fdb5cdc0800000000000000
+      internalID: -3619277876176064368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d51864f243c9cd20800000000000000
+      internalID: 3299382894361318867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a31eba667021c70800000000000000
+      internalID: 8940216347835578948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74506619e3cc61740800000000000000
+      internalID: 5122506195279938887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f3796a654bd8820800000000000000
+      internalID: 2922190017488437040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a806fab46815dd0800000000000000
+      internalID: -2499068658590905738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581366d053faa24e0800000000000000
+      internalID: -2005598041647206011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecf30f1a2f0d77f0800000000000000
+      internalID: -613317300669121311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fd2e9cfb58a6050800000000000000
+      internalID: 5794590929337900834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 817
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f904700b623a230800000000000000
+      internalID: 3648802660578008941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 780
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfda6010dd377bf80800000000000000
+      internalID: -8090870812505625092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 780
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f372859eeadcbc5b0800000000000000
+      internalID: -5346953981449459905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 779
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d626b0533417f50800000000000000
+      internalID: 6877352001074785653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 779
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d3cd781d183d1c0800000000000000
+      internalID: -4480094467376005822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 779
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc95955946608c90800000000000000
+      internalID: -7169618141619315524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 780
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31cd60c19e44e6f10800000000000000
+      internalID: 2264823430602218515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 780
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7990cea60e2faa40800000000000000
+      internalID: 5381570685967571322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 780
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fb8f41b2051c690800000000000000
+      internalID: -7583692151549542585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 743
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24723a71ba4512d0800000000000000
+      internalID: -3308656225113967572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 744
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5db4db507fd5710800000000000000
+      internalID: 1683773439729194484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 745
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03ea4ebf2e624900800000000000000
+      internalID: 667216846139351819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 745
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04566b332504af70800000000000000
+      internalID: 9197481987875951628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 743
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f757223f450cff0a0800000000000000
+      internalID: -6845541437490956929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 743
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9866b1c5fa18910800000000000000
+      internalID: 1837942933075429796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 744
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132fc83f41f6d2eb0800000000000000
+      internalID: -4743012696775134671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 744
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba9961769c00d750800000000000000
+      internalID: 6327571316742920893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 706
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ccb38c32fb2e880800000000000000
+      internalID: -8583087779410621354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 707
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc26418d44318810800000000000000
+      internalID: 1765750036391931057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 708
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a5b693370b9bf60800000000000000
+      internalID: 8050659817832536632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 708
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa444f8cc61202ef0800000000000000
+      internalID: -135071237709478742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 706
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f28a518b1b0c8e10800000000000000
+      internalID: 2201146530639545075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 706
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c9d2d306d6a8780800000000000000
+      internalID: -8680005071692522493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 707
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8315d77d03e213c30800000000000000
+      internalID: 4337298703443120440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 708
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7944e5b1cf950bd80800000000000000
+      internalID: -8236984779134843753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 669
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1178e0dc52a2b20800000000000000
+      internalID: 3110340055295005102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 669
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703d2f8f38c496870800000000000000
+      internalID: 8676550286807061255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 668
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab83e61855e093540800000000000000
+      internalID: 4988033822696028346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 669
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33591361f88cdbf0800000000000000
+      internalID: -298212904982195396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 669
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619adbea8551956f0800000000000000
+      internalID: -695501196819060458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 669
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac14afa3851f3ae0800000000000000
+      internalID: -1567510489969976150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 669
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4000bd31071d053e0800000000000000
+      internalID: -2066921949663395836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 669
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3801b06275644e0800000000000000
+      internalID: -1997813563786230785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 632
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24672db40ff087e0800000000000000
+      internalID: -1765130658110806994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 632
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad95134be3a28e5f0800000000000000
+      internalID: -727284891020863014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 632
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb43d943e24e4430800000000000000
+      internalID: 3769023482119277540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 632
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615758025a12cb630800000000000000
+      internalID: 3944064366768649494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 632
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b06da9ff76e03fd0800000000000000
+      internalID: -2364136367045386057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 632
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae590d21b6f87db60800000000000000
+      internalID: 7770837372091012586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 632
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47aaa31e9b9ddc180800000000000000
+      internalID: -9093372680220267916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 632
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac449757afe146c50800000000000000
+      internalID: 6657480210221974730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 596
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6762dc50fbc167710800000000000000
+      internalID: 1690570316885862006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 596
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a372cf46799be680800000000000000
+      internalID: -8724711119676869725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 596
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea0d19e083d85730800000000000000
+      internalID: 3988170020656843490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 597
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2336a6b2c9b97a520800000000000000
+      internalID: 2713308395559609138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 597
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15784768dfcd062d0800000000000000
+      internalID: -3287384746539841711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 597
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5967586397c07220800000000000000
+      internalID: 2481702830605822301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 596
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cede2fd9cc43ced0800000000000000
+      internalID: -2394986146914443584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 559
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd303a209e0a21710800000000000000
+      internalID: 1662568135085196252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 560
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5bbe324eb8eba80800000000000000
+      internalID: -8449162038929017420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 560
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0e1626df00a2be0800000000000000
+      internalID: -1501386437497331536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 559
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3d70114ec6ccfe0800000000000000
+      internalID: -1167438476601732128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 521
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a502aa0ee4bdaf0800000000000000
+      internalID: -370615817494046049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 521
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dfbd8673b8200c0800000000000000
+      internalID: -4610969998375256812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 521
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1518e435c3e0751f0800000000000000
+      internalID: -1056359935336611503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 521
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d018c224acaa16b70800000000000000
+      internalID: 8890574925076398349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 521
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677cb12cff4028540800000000000000
+      internalID: 5008571232109184886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 484
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34315085e94ca6720800000000000000
+      internalID: 2840298699371123523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 484
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ac6f9476484f690800000000000000
+      internalID: -7569279494545552821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 484
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c6bf8c87e0157f0800000000000000
+      internalID: -625702961297003470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 484
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d288a723e74a64a50800000000000000
+      internalID: 6505067573702985773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 484
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0def72e37cb7358c0800000000000000
+      internalID: -4011726747385463088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 484
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242694d2c28259310800000000000000
+      internalID: 1411078228453974594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 447
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1852c2c43c3e94f20800000000000000
+      internalID: 3407505021018580353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 447
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193da9a2c716290b0800000000000000
+      internalID: -5723404990515850351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 447
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee8b6a24ed2df2d0800000000000000
+      internalID: -3243385698649403680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 447
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4857a99b176804500800000000000000
+      internalID: 378450191702455684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 447
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff9fec9df72dbfb0800000000000000
+      internalID: -4630500871653842957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 447
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a71e7e675fa1eb70800000000000000
+      internalID: 8926608726475806630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 411
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896f309a2b05943f0800000000000000
+      internalID: -916112320923175272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 411
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d74fc3671eefb090800000000000000
+      internalID: -8016427027470006319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 412
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25598dbe5619b1980800000000000000
+      internalID: -8567093999207672494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 411
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e67aebde64cde540800000000000000
+      internalID: 5038899538512475873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 375
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f597ffbdf1bf9e1c0800000000000000
+      internalID: -4473768640562366113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 375
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50bed569ed6c1070800000000000000
+      internalID: 8078452680799727707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 375
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2ef8f2dffcd23f0800000000000000
+      internalID: -923853662209449291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 339
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5227bbbd755006f40800000000000000
+      internalID: 5719577401667318309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 339
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa99f835eacd2820800000000000000
+      internalID: 2895193221321300721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 340
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc76a7c0441fe460800000000000000
+      internalID: 7273054191686679762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 340
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c148706dbdc8020a0800000000000000
+      internalID: -6908366952569797604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 303
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2915228899366ba90800000000000000
+      internalID: -7298536635042213486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 303
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3891177ea10f7090800000000000000
+      internalID: -8034701361372096451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 303
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ed2731cc821c5e0800000000000000
+      internalID: -1891185511554163184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 266
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9800e5f45a114910800000000000000
+      internalID: 1819764676639066269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 266
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3684099e8b51a3510800000000000000
+      internalID: 1529558907382417507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 266
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88013ff2c622bbd50800000000000000
+      internalID: 6754029914228461704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 266
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a85d07076be62280800000000000000
+      internalID: -9068301971931440988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 266
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe351cbc758e053b0800000000000000
+      internalID: -5525661279005355025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 266
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f07515bb1af1470800000000000000
+      internalID: 8367584458573287270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 266
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8327b7957c4e3cbd0800000000000000
+      internalID: -2610991814093868488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 266
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76f65d3b530fb410800000000000000
+      internalID: 1494917291716310653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 266
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18dd46c241cb5a50800000000000000
+      internalID: 6511010178833176604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 225
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8d14b58fa21fac0800000000000000
+      internalID: -3823227362489542418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 225
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2326679b69ed3f030800000000000000
+      internalID: 3527407672099234354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 225
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caaf3a2fe50c5fbc0800000000000000
+      internalID: -3749879600685778260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 225
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050e6d85600fbb7f0800000000000000
+      internalID: -595618615645511600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 189
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf34cdd3259c7d150800000000000000
+      internalID: 5897403592127300604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 189
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30caeb504f317d480800000000000000
+      internalID: -8874602601920943101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 189
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd37d9ffe10fc2b00800000000000000
+      internalID: 805282449320670172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 189
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475d95d6451fb1790800000000000000
+      internalID: -7558182204697094796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 189
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763f0603165d3e750800000000000000
+      internalID: 6333140114413253479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 154
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29797fccd11908a70800000000000000
+      internalID: 8827214826825029522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 117
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d32468629c81ba0800000000000000
+      internalID: -6117918926484390547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 117
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219c872eb12ac3810800000000000000
+      internalID: 1746448996160293138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 80
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac1e096bafe845a0800000000000000
+      internalID: -6536711339647296346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 80
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d607a99a4f155ea0800000000000000
+      internalID: -5884762932823783725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 80
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693ad7821525726b0800000000000000
+      internalID: -5321193926189800554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4450125fd84173ea0800000000000000
+      internalID: -5893218987455478460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 40
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8b336326106e750800000000000000
+      internalID: 6333751447270963449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 3
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b84899ffe8843aa0800000000000000
+      internalID: -6182165824206780234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 4
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb2e92d658361b70800000000000000
+      internalID: 8869338461704694753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_120
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b00535ef9aceed0800000000000000
+      internalID: -2383343193001292954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_121
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 3
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c1eaffdb5b5d460800000000000000
+      internalID: 7265913401475210259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aren-SpriteSheet_122
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 3
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce645e79fb68ce90800000000000000
+      internalID: -7005230501064315189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: acb6f75ea6cf61046a7f4c5bf3a19396
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Aren-SpriteSheet_0: -3619277876176064368
+      Aren-SpriteSheet_1: 3299382894361318867
+      Aren-SpriteSheet_10: -8090870812505625092
+      Aren-SpriteSheet_100: 6511010178833176604
+      Aren-SpriteSheet_101: -3823227362489542418
+      Aren-SpriteSheet_102: 3527407672099234354
+      Aren-SpriteSheet_103: -3749879600685778260
+      Aren-SpriteSheet_104: -595618615645511600
+      Aren-SpriteSheet_105: 5897403592127300604
+      Aren-SpriteSheet_106: -8874602601920943101
+      Aren-SpriteSheet_107: 805282449320670172
+      Aren-SpriteSheet_108: -7558182204697094796
+      Aren-SpriteSheet_109: 6333140114413253479
+      Aren-SpriteSheet_11: -5346953981449459905
+      Aren-SpriteSheet_110: 8827214826825029522
+      Aren-SpriteSheet_111: -6117918926484390547
+      Aren-SpriteSheet_112: 1746448996160293138
+      Aren-SpriteSheet_113: -6536711339647296346
+      Aren-SpriteSheet_114: -5884762932823783725
+      Aren-SpriteSheet_115: -5321193926189800554
+      Aren-SpriteSheet_116: -5893218987455478460
+      Aren-SpriteSheet_117: 6333751447270963449
+      Aren-SpriteSheet_118: -6182165824206780234
+      Aren-SpriteSheet_119: 8869338461704694753
+      Aren-SpriteSheet_12: 6877352001074785653
+      Aren-SpriteSheet_120: -2383343193001292954
+      Aren-SpriteSheet_121: 7265913401475210259
+      Aren-SpriteSheet_122: -7005230501064315189
+      Aren-SpriteSheet_123: -1274967569
+      Aren-SpriteSheet_13: -4480094467376005822
+      Aren-SpriteSheet_14: -7169618141619315524
+      Aren-SpriteSheet_15: 2264823430602218515
+      Aren-SpriteSheet_16: 5381570685967571322
+      Aren-SpriteSheet_17: -7583692151549542585
+      Aren-SpriteSheet_18: -3308656225113967572
+      Aren-SpriteSheet_19: 1683773439729194484
+      Aren-SpriteSheet_2: 8940216347835578948
+      Aren-SpriteSheet_20: 667216846139351819
+      Aren-SpriteSheet_21: 9197481987875951628
+      Aren-SpriteSheet_22: -6845541437490956929
+      Aren-SpriteSheet_23: 1837942933075429796
+      Aren-SpriteSheet_24: -4743012696775134671
+      Aren-SpriteSheet_25: 6327571316742920893
+      Aren-SpriteSheet_26: -8583087779410621354
+      Aren-SpriteSheet_27: 1765750036391931057
+      Aren-SpriteSheet_28: 8050659817832536632
+      Aren-SpriteSheet_29: -135071237709478742
+      Aren-SpriteSheet_3: 5122506195279938887
+      Aren-SpriteSheet_30: 2201146530639545075
+      Aren-SpriteSheet_31: -8680005071692522493
+      Aren-SpriteSheet_32: 4337298703443120440
+      Aren-SpriteSheet_33: -8236984779134843753
+      Aren-SpriteSheet_34: 3110340055295005102
+      Aren-SpriteSheet_35: 8676550286807061255
+      Aren-SpriteSheet_36: 4988033822696028346
+      Aren-SpriteSheet_37: -298212904982195396
+      Aren-SpriteSheet_38: -695501196819060458
+      Aren-SpriteSheet_39: -1567510489969976150
+      Aren-SpriteSheet_4: 2922190017488437040
+      Aren-SpriteSheet_40: -2066921949663395836
+      Aren-SpriteSheet_41: -1997813563786230785
+      Aren-SpriteSheet_42: -1765130658110806994
+      Aren-SpriteSheet_43: -727284891020863014
+      Aren-SpriteSheet_44: 3769023482119277540
+      Aren-SpriteSheet_45: 3944064366768649494
+      Aren-SpriteSheet_46: -2364136367045386057
+      Aren-SpriteSheet_47: 7770837372091012586
+      Aren-SpriteSheet_48: -9093372680220267916
+      Aren-SpriteSheet_49: 6657480210221974730
+      Aren-SpriteSheet_5: -2499068658590905738
+      Aren-SpriteSheet_50: 1690570316885862006
+      Aren-SpriteSheet_51: -8724711119676869725
+      Aren-SpriteSheet_52: 3988170020656843490
+      Aren-SpriteSheet_53: 2713308395559609138
+      Aren-SpriteSheet_54: -3287384746539841711
+      Aren-SpriteSheet_55: 2481702830605822301
+      Aren-SpriteSheet_56: -2394986146914443584
+      Aren-SpriteSheet_57: 1662568135085196252
+      Aren-SpriteSheet_58: -8449162038929017420
+      Aren-SpriteSheet_59: -1501386437497331536
+      Aren-SpriteSheet_6: -2005598041647206011
+      Aren-SpriteSheet_60: -1167438476601732128
+      Aren-SpriteSheet_61: -370615817494046049
+      Aren-SpriteSheet_62: -4610969998375256812
+      Aren-SpriteSheet_63: -1056359935336611503
+      Aren-SpriteSheet_64: 8890574925076398349
+      Aren-SpriteSheet_65: 5008571232109184886
+      Aren-SpriteSheet_66: 2840298699371123523
+      Aren-SpriteSheet_67: -7569279494545552821
+      Aren-SpriteSheet_68: -625702961297003470
+      Aren-SpriteSheet_69: 6505067573702985773
+      Aren-SpriteSheet_7: -613317300669121311
+      Aren-SpriteSheet_70: -4011726747385463088
+      Aren-SpriteSheet_71: 1411078228453974594
+      Aren-SpriteSheet_72: 3407505021018580353
+      Aren-SpriteSheet_73: -5723404990515850351
+      Aren-SpriteSheet_74: -3243385698649403680
+      Aren-SpriteSheet_75: 378450191702455684
+      Aren-SpriteSheet_76: -4630500871653842957
+      Aren-SpriteSheet_77: 8926608726475806630
+      Aren-SpriteSheet_78: -916112320923175272
+      Aren-SpriteSheet_79: -8016427027470006319
+      Aren-SpriteSheet_8: 5794590929337900834
+      Aren-SpriteSheet_80: -8567093999207672494
+      Aren-SpriteSheet_81: 5038899538512475873
+      Aren-SpriteSheet_82: -4473768640562366113
+      Aren-SpriteSheet_83: 8078452680799727707
+      Aren-SpriteSheet_84: -923853662209449291
+      Aren-SpriteSheet_85: 5719577401667318309
+      Aren-SpriteSheet_86: 2895193221321300721
+      Aren-SpriteSheet_87: 7273054191686679762
+      Aren-SpriteSheet_88: -6908366952569797604
+      Aren-SpriteSheet_89: -7298536635042213486
+      Aren-SpriteSheet_9: 3648802660578008941
+      Aren-SpriteSheet_90: -8034701361372096451
+      Aren-SpriteSheet_91: -1891185511554163184
+      Aren-SpriteSheet_92: 1819764676639066269
+      Aren-SpriteSheet_93: 1529558907382417507
+      Aren-SpriteSheet_94: 6754029914228461704
+      Aren-SpriteSheet_95: -9068301971931440988
+      Aren-SpriteSheet_96: -5525661279005355025
+      Aren-SpriteSheet_97: 8367584458573287270
+      Aren-SpriteSheet_98: -2610991814093868488
+      Aren-SpriteSheet_99: 1494917291716310653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

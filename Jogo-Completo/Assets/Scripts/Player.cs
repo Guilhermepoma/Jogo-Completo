@@ -1,88 +1,78 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
+    public float normalSpeed = 5f;
+    public float sprintSpeed = 10f;
+    public float sprintDuration = 0.3f;
+    public float doubleTapTime = 0.25f;
+
+    private float lastPressD;
+    private float lastPressA;
+    private bool isSprinting;
+    private float sprintTimer;
+
+    private Rigidbody2D rb;
     private Animator anim;
-    private Rigidbody2D rigd;
-    public float speed;
-
-    private Vector2 posicaoInicial;
-    public GameManager gameManager;
-
-    // Pulo
-    public float jumpForce;
-    public bool isGround;
 
     void Start()
     {
-        posicaoInicial = transform.position;
-        anim = GetComponentInChildren<Animator>(); // pega o Animator mesmo se estiver num filho
-        rigd = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        Move();
-        Jump();
-    }
+        float move = Input.GetAxisRaw("Horizontal");
 
-    void Move()
-    {
-        float teclas = Input.GetAxis("Horizontal");
-        rigd.linearVelocity = new Vector2(teclas * speed, rigd.linearVelocity.y);
-
-        // Flip independente de estar no chão
-        if (teclas > 0)
+        // Movimentaï¿½ï¿½o normal
+        if (!isSprinting)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        else if (teclas < 0)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            rb.linearVelocity = new Vector2(move * normalSpeed, rb.linearVelocity.y);
         }
 
-        // Animações
-        if (isGround)
+        // Verifica duplo toque no D
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            if (Mathf.Abs(teclas) > 0)
-                anim.SetInteger("transitions", 1); // andando
-            else
-                anim.SetInteger("transitions", 0); // parado
+            if (Time.time - lastPressD <= doubleTapTime)
+                StartSprint(1);
+            lastPressD = Time.time;
         }
+
+        // Verifica duplo toque no A
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (Time.time - lastPressA <= doubleTapTime)
+                StartSprint(-1);
+            lastPressA = Time.time;
+        }
+
+        // Controle do sprint
+        if (isSprinting)
+        {
+            sprintTimer -= Time.deltaTime;
+            if (sprintTimer <= 0)
+                StopSprint();
+        }
+
+        // Animaï¿½ï¿½o
+        anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
+
+        if (isSprinting)
+            anim.SetBool("Speed", true);
         else
-        {
-            anim.SetInteger("transitions", 2); // pulando
-        }
+            anim.SetBool("Speed", false);
     }
 
-    void Jump()
+    void StartSprint(int direction)
     {
-        if (Input.GetKeyDown(KeyCode.W) && isGround)
-        {
-            rigd.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            anim.SetInteger("transitions", 2);
-            isGround = false;
-        }
+        isSprinting = true;
+        sprintTimer = sprintDuration;
+        rb.linearVelocity = new Vector2(direction * sprintSpeed, rb.linearVelocity.y);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void StopSprint()
     {
-        if (collision.gameObject.CompareTag("tagGround"))
-        {
-            isGround = true;
-        }
-    }
-
-    public void ReiniciarPosicao()
-    {
-        transform.position = posicaoInicial;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("morreu"))
-        {
-            transform.position = posicaoInicial;
-        }
+        isSprinting = false;
     }
 }

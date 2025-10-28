@@ -25,7 +25,9 @@ public class Inimigo_rat : MonoBehaviour
 
         // Define a transição: 0 = Idle, 1 = Correndo
         float transitions = (distance < chaseDistance) ? 1f : 0f;
-        anim.SetFloat("transitions", transitions);
+
+
+        //anim.SetFloat("transitions", transitions);
 
         // Movimento de perseguição
         if (distance < chaseDistance)
