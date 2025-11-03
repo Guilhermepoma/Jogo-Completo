@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dungeonParallax_0: 6555928141156802836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

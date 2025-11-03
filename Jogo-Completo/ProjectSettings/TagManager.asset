@@ -6,6 +6,7 @@ TagManager:
   tags:
   - tagGround
   - morreu
+  - prox_f2
   layers:
   - Default
   - TransparentFX
