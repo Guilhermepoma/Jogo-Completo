@@ -23,15 +23,13 @@ public class Inimigo_rat : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Define a transição: 0 = Idle, 1 = Correndo
-        float transitions = (distance < chaseDistance) ? 1f : 0f;
-
-
-        //anim.SetFloat("transitions", transitions);
-
         // Movimento de perseguição
         if (distance < chaseDistance)
         {
+            // *** INÍCIO DA IMPLEMENTAÇÃO DA ANIMAÇÃO (CORRENDO) ***
+            anim.SetInteger("transitions", 1); // Correndo
+            // *** FIM DA IMPLEMENTAÇÃO DA ANIMAÇÃO ***
+
             Vector2 direction = (player.position - transform.position).normalized;
             rig.linearVelocity = new Vector2(direction.x * speed, rig.linearVelocity.y);
 
@@ -40,8 +38,16 @@ public class Inimigo_rat : MonoBehaviour
         }
         else
         {
+            // *** INÍCIO DA IMPLEMENTAÇÃO DA ANIMAÇÃO (IDLE) ***
+            anim.SetInteger("transitions", 0); // Idle
+                                              // *** FIM DA IMPLEMENTAÇÃO DA ANIMAÇÃO ***
+
             rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
         }
+
+        // A linha abaixo foi removida, pois você quer usar um parâmetro Integer, não Float.
+        // float transitions = (distance < chaseDistance) ? 1f : 0f;
+        // anim.SetFloat("transitions", transitions); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

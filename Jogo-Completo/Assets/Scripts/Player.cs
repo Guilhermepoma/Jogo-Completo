@@ -1,78 +1,103 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public float normalSpeed = 5f;
-    public float sprintSpeed = 10f;
-    public float sprintDuration = 0.3f;
-    public float doubleTapTime = 0.25f;
+    public Animator anim;
+    private Rigidbody2D rigd;
+    public float speed;
 
-    private float lastPressD;
-    private float lastPressA;
-    private bool isSprinting;
-    private float sprintTimer;
+    public Vector2 posicaoInicial;
+    public GameManager gameManager;
 
-    private Rigidbody2D rb;
-    private Animator anim;
+    // Pulo
+    public float jumpForce;
+    public bool isGround;
+    private bool canDoubleJump;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        posicaoInicial = transform.position;
         anim = GetComponent<Animator>();
+        rigd = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        float move = Input.GetAxisRaw("Horizontal");
-
-        // Movimenta��o normal
-        if (!isSprinting)
-        {
-            rb.linearVelocity = new Vector2(move * normalSpeed, rb.linearVelocity.y);
-        }
-
-        // Verifica duplo toque no D
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            if (Time.time - lastPressD <= doubleTapTime)
-                StartSprint(1);
-            lastPressD = Time.time;
-        }
-
-        // Verifica duplo toque no A
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            if (Time.time - lastPressA <= doubleTapTime)
-                StartSprint(-1);
-            lastPressA = Time.time;
-        }
-
-        // Controle do sprint
-        if (isSprinting)
-        {
-            sprintTimer -= Time.deltaTime;
-            if (sprintTimer <= 0)
-                StopSprint();
-        }
-
-        // Anima��o
-        anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
-
-        if (isSprinting)
-            anim.SetBool("Speed", true);
-        else
-            anim.SetBool("Speed", false);
+        Move();
+        Jump();
     }
 
-    void StartSprint(int direction)
+    void Move()
     {
-        isSprinting = true;
-        sprintTimer = sprintDuration;
-        rb.linearVelocity = new Vector2(direction * sprintSpeed, rb.linearVelocity.y);
+        float teclas = Input.GetAxis("Horizontal");
+        rigd.linearVelocity = new Vector2(teclas * speed, rigd.linearVelocityY);
+
+        // virar o personagem sempre (no chão ou no ar)
+        if (teclas > 0)
+        {
+            transform.eulerAngles = new Vector2(0, 0);
+        }
+        else if (teclas < 0)
+        {
+            transform.eulerAngles = new Vector2(0, 180);
+        }
+
+        // animações
+        if (isGround)
+        {
+            if (Mathf.Abs(teclas) > 0)
+            {
+                anim.SetInteger("transitions", 1); // andando
+            }
+            else
+            {
+                anim.SetInteger("transitions", 0); // parado
+            }
+        }
     }
 
-    void StopSprint()
+    void Jump()
     {
-        isSprinting = false;
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            // Primeiro pulo
+            if (isGround)
+            {
+                rigd.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                anim.SetInteger("transitions", 2);
+                isGround = false;
+                canDoubleJump = true;
+            }
+            // Segundo pulo (no ar)
+            else if (canDoubleJump)
+            {
+                rigd.linearVelocity = new Vector2(rigd.linearVelocity.x, 0f);
+                rigd.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                anim.SetInteger("transitions", 2);
+                canDoubleJump = false;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("tagGround"))
+        {
+            isGround = true;
+            canDoubleJump = false;
+        }
+    }
+
+    public void ReiniciarPosicao()
+    {
+        transform.position = posicaoInicial;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("morreu"))
+        {
+            transform.position = posicaoInicial;
+        }
     }
 }

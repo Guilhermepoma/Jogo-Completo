@@ -469,12 +469,12 @@ TextureImporter:
       name: Aren-SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 854
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 851
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -491,12 +491,12 @@ TextureImporter:
       name: Aren-SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -513,12 +513,12 @@ TextureImporter:
       name: Aren-SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 106
+        x: 90
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -535,12 +535,12 @@ TextureImporter:
       name: Aren-SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 196
+        x: 180
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -557,12 +557,12 @@ TextureImporter:
       name: Aren-SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 286
+        x: 270
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -579,12 +579,12 @@ TextureImporter:
       name: Aren-SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 376
+        x: 360
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -601,12 +601,12 @@ TextureImporter:
       name: Aren-SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 466
+        x: 450
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -623,12 +623,12 @@ TextureImporter:
       name: Aren-SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 556
+        x: 540
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -645,12 +645,12 @@ TextureImporter:
       name: Aren-SpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 646
+        x: 630
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -667,12 +667,12 @@ TextureImporter:
       name: Aren-SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 736
+        x: 720
         y: 817
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -689,12 +689,12 @@ TextureImporter:
       name: Aren-SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 15
+        x: 0
         y: 780
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -711,12 +711,12 @@ TextureImporter:
       name: Aren-SpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 106
+        x: 90
         y: 780
-        width: 23
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -733,13 +733,13 @@ TextureImporter:
       name: Aren-SpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 197
+        x: 180
         y: 779
-        width: 21
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 90
+        height: 35
+      alignment: 9
+      pivot: {x: 0.3, y: 0.37142858}
+      border: {x: 0, y: 1, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -755,13 +755,13 @@ TextureImporter:
       name: Aren-SpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 288
+        x: 270
         y: 779
-        width: 19
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 90
+        height: 35
+      alignment: 9
+      pivot: {x: 0.3, y: 0.37142858}
+      border: {x: 0, y: 1, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -777,13 +777,13 @@ TextureImporter:
       name: Aren-SpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 379
+        x: 360
         y: 779
-        width: 17
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 90
+        height: 35
+      alignment: 9
+      pivot: {x: 0.3, y: 0.37142858}
+      border: {x: 0, y: 1, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -799,12 +799,12 @@ TextureImporter:
       name: Aren-SpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 468
+        x: 450
         y: 780
-        width: 19
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -821,12 +821,12 @@ TextureImporter:
       name: Aren-SpriteSheet_16
       rect:
         serializedVersion: 2
-        x: 557
+        x: 540
         y: 780
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -843,12 +843,12 @@ TextureImporter:
       name: Aren-SpriteSheet_17
       rect:
         serializedVersion: 2
-        x: 646
+        x: 630
         y: 780
-        width: 23
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 34
+      alignment: 9
+      pivot: {x: 0.3, y: 0.3529412}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -865,12 +865,12 @@ TextureImporter:
       name: Aren-SpriteSheet_18
       rect:
         serializedVersion: 2
-        x: 16
-        y: 743
-        width: 23
-        height: 22
+        x: 0
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -887,12 +887,12 @@ TextureImporter:
       name: Aren-SpriteSheet_19
       rect:
         serializedVersion: 2
-        x: 106
-        y: 744
-        width: 23
-        height: 22
+        x: 90
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -909,12 +909,12 @@ TextureImporter:
       name: Aren-SpriteSheet_20
       rect:
         serializedVersion: 2
-        x: 196
-        y: 745
-        width: 23
-        height: 22
+        x: 180
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -931,12 +931,12 @@ TextureImporter:
       name: Aren-SpriteSheet_21
       rect:
         serializedVersion: 2
-        x: 286
-        y: 745
-        width: 22
-        height: 21
+        x: 270
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -953,12 +953,12 @@ TextureImporter:
       name: Aren-SpriteSheet_22
       rect:
         serializedVersion: 2
-        x: 381
-        y: 743
-        width: 13
-        height: 21
+        x: 360
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -975,12 +975,12 @@ TextureImporter:
       name: Aren-SpriteSheet_23
       rect:
         serializedVersion: 2
-        x: 472
-        y: 743
-        width: 12
-        height: 23
+        x: 450
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -997,12 +997,12 @@ TextureImporter:
       name: Aren-SpriteSheet_24
       rect:
         serializedVersion: 2
-        x: 561
-        y: 744
-        width: 13
-        height: 23
+        x: 540
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1019,12 +1019,12 @@ TextureImporter:
       name: Aren-SpriteSheet_25
       rect:
         serializedVersion: 2
-        x: 651
-        y: 744
-        width: 14
-        height: 22
+        x: 630
+        y: 740
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1041,12 +1041,12 @@ TextureImporter:
       name: Aren-SpriteSheet_26
       rect:
         serializedVersion: 2
-        x: 18
-        y: 706
-        width: 16
-        height: 21
+        x: 0
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1063,12 +1063,12 @@ TextureImporter:
       name: Aren-SpriteSheet_27
       rect:
         serializedVersion: 2
-        x: 108
-        y: 707
-        width: 16
-        height: 21
+        x: 90
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1085,12 +1085,12 @@ TextureImporter:
       name: Aren-SpriteSheet_28
       rect:
         serializedVersion: 2
-        x: 198
-        y: 708
-        width: 16
-        height: 21
+        x: 180
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1107,12 +1107,12 @@ TextureImporter:
       name: Aren-SpriteSheet_29
       rect:
         serializedVersion: 2
-        x: 288
-        y: 708
-        width: 16
-        height: 21
+        x: 270
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1129,12 +1129,12 @@ TextureImporter:
       name: Aren-SpriteSheet_30
       rect:
         serializedVersion: 2
-        x: 381
-        y: 706
-        width: 10
-        height: 20
+        x: 360
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1151,12 +1151,12 @@ TextureImporter:
       name: Aren-SpriteSheet_31
       rect:
         serializedVersion: 2
-        x: 471
-        y: 706
-        width: 10
-        height: 22
+        x: 450
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1173,12 +1173,12 @@ TextureImporter:
       name: Aren-SpriteSheet_32
       rect:
         serializedVersion: 2
-        x: 561
-        y: 707
-        width: 10
-        height: 22
+        x: 540
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1195,12 +1195,12 @@ TextureImporter:
       name: Aren-SpriteSheet_33
       rect:
         serializedVersion: 2
-        x: 651
-        y: 708
-        width: 11
-        height: 21
+        x: 630
+        y: 703
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1217,12 +1217,12 @@ TextureImporter:
       name: Aren-SpriteSheet_34
       rect:
         serializedVersion: 2
-        x: 16
-        y: 669
-        width: 23
-        height: 22
+        x: 0
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1239,12 +1239,12 @@ TextureImporter:
       name: Aren-SpriteSheet_35
       rect:
         serializedVersion: 2
-        x: 107
-        y: 669
-        width: 21
-        height: 14
+        x: 90
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1261,12 +1261,12 @@ TextureImporter:
       name: Aren-SpriteSheet_36
       rect:
         serializedVersion: 2
-        x: 199
-        y: 668
-        width: 14
-        height: 16
+        x: 180
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1283,12 +1283,12 @@ TextureImporter:
       name: Aren-SpriteSheet_37
       rect:
         serializedVersion: 2
-        x: 287
-        y: 669
-        width: 18
-        height: 13
+        x: 270
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1305,12 +1305,12 @@ TextureImporter:
       name: Aren-SpriteSheet_38
       rect:
         serializedVersion: 2
-        x: 379
-        y: 669
-        width: 15
-        height: 19
+        x: 360
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1327,12 +1327,12 @@ TextureImporter:
       name: Aren-SpriteSheet_39
       rect:
         serializedVersion: 2
-        x: 470
-        y: 669
-        width: 17
-        height: 22
+        x: 450
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1349,12 +1349,12 @@ TextureImporter:
       name: Aren-SpriteSheet_40
       rect:
         serializedVersion: 2
-        x: 559
-        y: 669
-        width: 19
-        height: 23
+        x: 540
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1371,12 +1371,12 @@ TextureImporter:
       name: Aren-SpriteSheet_41
       rect:
         serializedVersion: 2
-        x: 647
-        y: 669
-        width: 22
-        height: 24
+        x: 630
+        y: 666
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1393,12 +1393,12 @@ TextureImporter:
       name: Aren-SpriteSheet_42
       rect:
         serializedVersion: 2
-        x: 17
-        y: 632
-        width: 21
-        height: 14
+        x: 0
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1415,12 +1415,12 @@ TextureImporter:
       name: Aren-SpriteSheet_43
       rect:
         serializedVersion: 2
-        x: 107
-        y: 632
-        width: 18
-        height: 13
+        x: 90
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1437,12 +1437,12 @@ TextureImporter:
       name: Aren-SpriteSheet_44
       rect:
         serializedVersion: 2
-        x: 197
-        y: 632
-        width: 14
-        height: 19
+        x: 180
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1459,12 +1459,12 @@ TextureImporter:
       name: Aren-SpriteSheet_45
       rect:
         serializedVersion: 2
-        x: 287
-        y: 632
-        width: 29
-        height: 15
+        x: 270
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1481,12 +1481,12 @@ TextureImporter:
       name: Aren-SpriteSheet_46
       rect:
         serializedVersion: 2
-        x: 377
-        y: 632
-        width: 28
-        height: 16
+        x: 360
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1503,12 +1503,12 @@ TextureImporter:
       name: Aren-SpriteSheet_47
       rect:
         serializedVersion: 2
-        x: 467
-        y: 632
-        width: 27
-        height: 17
+        x: 450
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1525,12 +1525,12 @@ TextureImporter:
       name: Aren-SpriteSheet_48
       rect:
         serializedVersion: 2
-        x: 557
-        y: 632
-        width: 27
-        height: 16
+        x: 540
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1547,12 +1547,12 @@ TextureImporter:
       name: Aren-SpriteSheet_49
       rect:
         serializedVersion: 2
-        x: 647
-        y: 632
-        width: 26
-        height: 17
+        x: 630
+        y: 629
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1569,12 +1569,12 @@ TextureImporter:
       name: Aren-SpriteSheet_50
       rect:
         serializedVersion: 2
-        x: 27
-        y: 596
-        width: 21
-        height: 20
+        x: 0
+        y: 592
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1591,12 +1591,12 @@ TextureImporter:
       name: Aren-SpriteSheet_51
       rect:
         serializedVersion: 2
-        x: 102
-        y: 596
-        width: 22
-        height: 16
+        x: 90
+        y: 592
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1613,12 +1613,12 @@ TextureImporter:
       name: Aren-SpriteSheet_52
       rect:
         serializedVersion: 2
-        x: 192
-        y: 596
-        width: 22
-        height: 18
+        x: 180
+        y: 592
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1635,12 +1635,12 @@ TextureImporter:
       name: Aren-SpriteSheet_53
       rect:
         serializedVersion: 2
-        x: 282
-        y: 597
-        width: 22
-        height: 17
+        x: 270
+        y: 592
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1657,12 +1657,12 @@ TextureImporter:
       name: Aren-SpriteSheet_54
       rect:
         serializedVersion: 2
-        x: 371
-        y: 597
-        width: 23
-        height: 17
+        x: 360
+        y: 592
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1679,12 +1679,12 @@ TextureImporter:
       name: Aren-SpriteSheet_55
       rect:
         serializedVersion: 2
-        x: 462
-        y: 597
-        width: 22
-        height: 17
+        x: 450
+        y: 592
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1701,12 +1701,12 @@ TextureImporter:
       name: Aren-SpriteSheet_56
       rect:
         serializedVersion: 2
-        x: 552
-        y: 596
-        width: 22
-        height: 17
+        x: 540
+        y: 592
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1723,12 +1723,12 @@ TextureImporter:
       name: Aren-SpriteSheet_57
       rect:
         serializedVersion: 2
-        x: 28
-        y: 559
-        width: 25
-        height: 20
+        x: 0
+        y: 555
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1745,12 +1745,12 @@ TextureImporter:
       name: Aren-SpriteSheet_58
       rect:
         serializedVersion: 2
-        x: 118
-        y: 560
-        width: 24
-        height: 19
+        x: 90
+        y: 555
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1767,12 +1767,12 @@ TextureImporter:
       name: Aren-SpriteSheet_59
       rect:
         serializedVersion: 2
-        x: 208
-        y: 560
-        width: 21
-        height: 19
+        x: 180
+        y: 555
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1789,12 +1789,12 @@ TextureImporter:
       name: Aren-SpriteSheet_60
       rect:
         serializedVersion: 2
-        x: 297
-        y: 559
-        width: 21
-        height: 19
+        x: 270
+        y: 555
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1811,12 +1811,12 @@ TextureImporter:
       name: Aren-SpriteSheet_61
       rect:
         serializedVersion: 2
-        x: 17
-        y: 521
-        width: 17
-        height: 23
+        x: 0
+        y: 518
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1833,12 +1833,12 @@ TextureImporter:
       name: Aren-SpriteSheet_62
       rect:
         serializedVersion: 2
-        x: 114
-        y: 521
-        width: 26
-        height: 17
+        x: 90
+        y: 518
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1855,12 +1855,12 @@ TextureImporter:
       name: Aren-SpriteSheet_63
       rect:
         serializedVersion: 2
-        x: 205
-        y: 521
-        width: 22
-        height: 16
+        x: 180
+        y: 518
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1877,12 +1877,12 @@ TextureImporter:
       name: Aren-SpriteSheet_64
       rect:
         serializedVersion: 2
-        x: 295
-        y: 521
-        width: 22
-        height: 16
+        x: 270
+        y: 518
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1899,12 +1899,12 @@ TextureImporter:
       name: Aren-SpriteSheet_65
       rect:
         serializedVersion: 2
-        x: 385
-        y: 521
-        width: 22
-        height: 16
+        x: 360
+        y: 518
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1921,12 +1921,12 @@ TextureImporter:
       name: Aren-SpriteSheet_66
       rect:
         serializedVersion: 2
-        x: 13
-        y: 484
-        width: 40
-        height: 21
+        x: 0
+        y: 481
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1943,12 +1943,12 @@ TextureImporter:
       name: Aren-SpriteSheet_67
       rect:
         serializedVersion: 2
-        x: 103
-        y: 484
-        width: 41
-        height: 21
+        x: 90
+        y: 481
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1965,12 +1965,12 @@ TextureImporter:
       name: Aren-SpriteSheet_68
       rect:
         serializedVersion: 2
-        x: 194
-        y: 484
-        width: 39
-        height: 21
+        x: 180
+        y: 481
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1987,12 +1987,12 @@ TextureImporter:
       name: Aren-SpriteSheet_69
       rect:
         serializedVersion: 2
-        x: 287
-        y: 484
-        width: 25
-        height: 20
+        x: 270
+        y: 481
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2009,12 +2009,12 @@ TextureImporter:
       name: Aren-SpriteSheet_70
       rect:
         serializedVersion: 2
-        x: 378
-        y: 484
-        width: 21
-        height: 21
+        x: 360
+        y: 481
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2031,12 +2031,12 @@ TextureImporter:
       name: Aren-SpriteSheet_71
       rect:
         serializedVersion: 2
-        x: 468
-        y: 484
-        width: 21
-        height: 21
+        x: 450
+        y: 481
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2053,12 +2053,12 @@ TextureImporter:
       name: Aren-SpriteSheet_72
       rect:
         serializedVersion: 2
-        x: 21
-        y: 447
-        width: 15
-        height: 19
+        x: 0
+        y: 444
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2075,12 +2075,12 @@ TextureImporter:
       name: Aren-SpriteSheet_73
       rect:
         serializedVersion: 2
-        x: 113
-        y: 447
-        width: 11
-        height: 18
+        x: 90
+        y: 444
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2097,12 +2097,12 @@ TextureImporter:
       name: Aren-SpriteSheet_74
       rect:
         serializedVersion: 2
-        x: 203
-        y: 447
-        width: 12
-        height: 18
+        x: 180
+        y: 444
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2119,12 +2119,12 @@ TextureImporter:
       name: Aren-SpriteSheet_75
       rect:
         serializedVersion: 2
-        x: 294
-        y: 447
-        width: 12
-        height: 18
+        x: 270
+        y: 444
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2141,12 +2141,12 @@ TextureImporter:
       name: Aren-SpriteSheet_76
       rect:
         serializedVersion: 2
-        x: 385
-        y: 447
-        width: 11
-        height: 18
+        x: 360
+        y: 444
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2163,12 +2163,12 @@ TextureImporter:
       name: Aren-SpriteSheet_77
       rect:
         serializedVersion: 2
-        x: 475
-        y: 447
-        width: 11
-        height: 18
+        x: 450
+        y: 444
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2185,12 +2185,12 @@ TextureImporter:
       name: Aren-SpriteSheet_78
       rect:
         serializedVersion: 2
-        x: 12
-        y: 411
-        width: 22
-        height: 17
+        x: 0
+        y: 407
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2207,12 +2207,12 @@ TextureImporter:
       name: Aren-SpriteSheet_79
       rect:
         serializedVersion: 2
-        x: 102
-        y: 411
-        width: 22
-        height: 18
+        x: 90
+        y: 407
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2229,12 +2229,12 @@ TextureImporter:
       name: Aren-SpriteSheet_80
       rect:
         serializedVersion: 2
-        x: 192
-        y: 412
-        width: 22
-        height: 17
+        x: 180
+        y: 407
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2251,12 +2251,12 @@ TextureImporter:
       name: Aren-SpriteSheet_81
       rect:
         serializedVersion: 2
-        x: 282
-        y: 411
-        width: 22
-        height: 18
+        x: 270
+        y: 407
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2273,12 +2273,12 @@ TextureImporter:
       name: Aren-SpriteSheet_82
       rect:
         serializedVersion: 2
-        x: 22
+        x: 0
         y: 375
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3, y: 0.375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2295,12 +2295,12 @@ TextureImporter:
       name: Aren-SpriteSheet_83
       rect:
         serializedVersion: 2
-        x: 112
+        x: 90
         y: 375
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3, y: 0.375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2317,12 +2317,12 @@ TextureImporter:
       name: Aren-SpriteSheet_84
       rect:
         serializedVersion: 2
-        x: 202
+        x: 180
         y: 375
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 90
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3, y: 0.375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2339,12 +2339,12 @@ TextureImporter:
       name: Aren-SpriteSheet_85
       rect:
         serializedVersion: 2
-        x: 21
-        y: 339
-        width: 14
-        height: 23
+        x: 0
+        y: 333
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2361,12 +2361,12 @@ TextureImporter:
       name: Aren-SpriteSheet_86
       rect:
         serializedVersion: 2
-        x: 111
-        y: 339
-        width: 14
-        height: 23
+        x: 90
+        y: 333
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2383,12 +2383,12 @@ TextureImporter:
       name: Aren-SpriteSheet_87
       rect:
         serializedVersion: 2
-        x: 197
-        y: 340
-        width: 19
-        height: 21
+        x: 180
+        y: 333
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2405,12 +2405,12 @@ TextureImporter:
       name: Aren-SpriteSheet_88
       rect:
         serializedVersion: 2
-        x: 287
-        y: 340
-        width: 19
-        height: 21
+        x: 270
+        y: 333
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2427,12 +2427,12 @@ TextureImporter:
       name: Aren-SpriteSheet_89
       rect:
         serializedVersion: 2
-        x: 17
-        y: 303
-        width: 19
-        height: 22
+        x: 0
+        y: 296
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2449,12 +2449,12 @@ TextureImporter:
       name: Aren-SpriteSheet_90
       rect:
         serializedVersion: 2
-        x: 107
-        y: 303
-        width: 19
-        height: 22
+        x: 90
+        y: 296
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2471,12 +2471,12 @@ TextureImporter:
       name: Aren-SpriteSheet_91
       rect:
         serializedVersion: 2
-        x: 197
-        y: 303
-        width: 19
-        height: 22
+        x: 180
+        y: 296
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2493,12 +2493,12 @@ TextureImporter:
       name: Aren-SpriteSheet_92
       rect:
         serializedVersion: 2
-        x: 20
-        y: 266
-        width: 14
-        height: 21
+        x: 0
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2515,12 +2515,12 @@ TextureImporter:
       name: Aren-SpriteSheet_93
       rect:
         serializedVersion: 2
-        x: 107
-        y: 266
-        width: 17
-        height: 21
+        x: 90
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2537,12 +2537,12 @@ TextureImporter:
       name: Aren-SpriteSheet_94
       rect:
         serializedVersion: 2
-        x: 197
-        y: 266
-        width: 18
-        height: 21
+        x: 180
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2559,12 +2559,12 @@ TextureImporter:
       name: Aren-SpriteSheet_95
       rect:
         serializedVersion: 2
-        x: 286
-        y: 266
-        width: 20
-        height: 22
+        x: 270
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2581,12 +2581,12 @@ TextureImporter:
       name: Aren-SpriteSheet_96
       rect:
         serializedVersion: 2
-        x: 375
-        y: 266
-        width: 21
-        height: 22
+        x: 360
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2603,12 +2603,12 @@ TextureImporter:
       name: Aren-SpriteSheet_97
       rect:
         serializedVersion: 2
-        x: 466
-        y: 266
-        width: 20
-        height: 22
+        x: 450
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2625,12 +2625,12 @@ TextureImporter:
       name: Aren-SpriteSheet_98
       rect:
         serializedVersion: 2
-        x: 561
-        y: 266
-        width: 15
-        height: 22
+        x: 540
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2647,12 +2647,12 @@ TextureImporter:
       name: Aren-SpriteSheet_99
       rect:
         serializedVersion: 2
-        x: 652
-        y: 266
-        width: 14
-        height: 22
+        x: 630
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2669,12 +2669,12 @@ TextureImporter:
       name: Aren-SpriteSheet_100
       rect:
         serializedVersion: 2
-        x: 742
-        y: 266
-        width: 14
-        height: 22
+        x: 720
+        y: 259
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2691,12 +2691,12 @@ TextureImporter:
       name: Aren-SpriteSheet_101
       rect:
         serializedVersion: 2
-        x: 22
-        y: 225
-        width: 12
-        height: 18
+        x: 0
+        y: 222
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2713,12 +2713,12 @@ TextureImporter:
       name: Aren-SpriteSheet_102
       rect:
         serializedVersion: 2
-        x: 111
-        y: 225
-        width: 13
-        height: 15
+        x: 90
+        y: 222
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2735,12 +2735,12 @@ TextureImporter:
       name: Aren-SpriteSheet_103
       rect:
         serializedVersion: 2
-        x: 203
-        y: 225
-        width: 11
-        height: 16
+        x: 180
+        y: 222
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2757,12 +2757,12 @@ TextureImporter:
       name: Aren-SpriteSheet_104
       rect:
         serializedVersion: 2
-        x: 293
-        y: 225
-        width: 12
-        height: 19
+        x: 270
+        y: 222
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2779,12 +2779,12 @@ TextureImporter:
       name: Aren-SpriteSheet_105
       rect:
         serializedVersion: 2
-        x: 23
-        y: 189
-        width: 9
-        height: 24
+        x: 0
+        y: 185
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2801,12 +2801,12 @@ TextureImporter:
       name: Aren-SpriteSheet_106
       rect:
         serializedVersion: 2
-        x: 113
-        y: 189
-        width: 9
-        height: 24
+        x: 90
+        y: 185
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2823,12 +2823,12 @@ TextureImporter:
       name: Aren-SpriteSheet_107
       rect:
         serializedVersion: 2
-        x: 202
-        y: 189
-        width: 10
-        height: 24
+        x: 180
+        y: 185
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2845,12 +2845,12 @@ TextureImporter:
       name: Aren-SpriteSheet_108
       rect:
         serializedVersion: 2
-        x: 292
-        y: 189
-        width: 10
-        height: 24
+        x: 270
+        y: 185
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2867,12 +2867,12 @@ TextureImporter:
       name: Aren-SpriteSheet_109
       rect:
         serializedVersion: 2
-        x: 382
-        y: 189
-        width: 10
-        height: 24
+        x: 360
+        y: 185
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2889,12 +2889,12 @@ TextureImporter:
       name: Aren-SpriteSheet_110
       rect:
         serializedVersion: 2
-        x: 23
-        y: 154
-        width: 9
-        height: 22
+        x: 0
+        y: 148
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2911,12 +2911,12 @@ TextureImporter:
       name: Aren-SpriteSheet_111
       rect:
         serializedVersion: 2
-        x: 23
-        y: 117
-        width: 9
-        height: 22
+        x: 0
+        y: 111
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2933,12 +2933,12 @@ TextureImporter:
       name: Aren-SpriteSheet_112
       rect:
         serializedVersion: 2
-        x: 112
-        y: 117
-        width: 11
-        height: 22
+        x: 90
+        y: 111
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2955,12 +2955,12 @@ TextureImporter:
       name: Aren-SpriteSheet_113
       rect:
         serializedVersion: 2
-        x: 22
-        y: 80
-        width: 11
-        height: 23
+        x: 0
+        y: 74
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2977,12 +2977,12 @@ TextureImporter:
       name: Aren-SpriteSheet_114
       rect:
         serializedVersion: 2
-        x: 113
-        y: 80
-        width: 10
-        height: 23
+        x: 90
+        y: 74
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2999,12 +2999,12 @@ TextureImporter:
       name: Aren-SpriteSheet_115
       rect:
         serializedVersion: 2
-        x: 203
-        y: 80
-        width: 10
-        height: 23
+        x: 180
+        y: 74
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3021,12 +3021,12 @@ TextureImporter:
       name: Aren-SpriteSheet_116
       rect:
         serializedVersion: 2
-        x: 16
-        y: 40
-        width: 23
-        height: 22
+        x: 0
+        y: 37
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3043,12 +3043,12 @@ TextureImporter:
       name: Aren-SpriteSheet_117
       rect:
         serializedVersion: 2
-        x: 106
-        y: 40
-        width: 23
-        height: 22
+        x: 90
+        y: 37
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3065,12 +3065,12 @@ TextureImporter:
       name: Aren-SpriteSheet_118
       rect:
         serializedVersion: 2
-        x: 16
-        y: 3
-        width: 23
-        height: 21
+        x: 0
+        y: 0
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3087,12 +3087,12 @@ TextureImporter:
       name: Aren-SpriteSheet_119
       rect:
         serializedVersion: 2
-        x: 106
-        y: 4
-        width: 25
-        height: 17
+        x: 90
+        y: 0
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3109,12 +3109,12 @@ TextureImporter:
       name: Aren-SpriteSheet_120
       rect:
         serializedVersion: 2
-        x: 198
-        y: 3
-        width: 36
-        height: 6
+        x: 180
+        y: 0
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3131,12 +3131,12 @@ TextureImporter:
       name: Aren-SpriteSheet_121
       rect:
         serializedVersion: 2
-        x: 289
-        y: 3
-        width: 35
-        height: 6
+        x: 270
+        y: 0
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3153,12 +3153,12 @@ TextureImporter:
       name: Aren-SpriteSheet_122
       rect:
         serializedVersion: 2
-        x: 380
-        y: 3
-        width: 35
-        height: 6
+        x: 360
+        y: 0
+        width: 90
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3213,7 +3213,6 @@ TextureImporter:
       Aren-SpriteSheet_120: -2383343193001292954
       Aren-SpriteSheet_121: 7265913401475210259
       Aren-SpriteSheet_122: -7005230501064315189
-      Aren-SpriteSheet_123: -1274967569
       Aren-SpriteSheet_13: -4480094467376005822
       Aren-SpriteSheet_14: -7169618141619315524
       Aren-SpriteSheet_15: 2264823430602218515
