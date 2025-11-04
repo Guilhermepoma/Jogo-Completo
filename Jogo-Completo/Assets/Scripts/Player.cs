@@ -3,145 +3,118 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public Animator anim;
-    private Rigidbody2D rigd;
+    private Animator anim;
+    private Rigidbody2D rig;
 
     [Header("Movimento")]
-    public float speed = 5f;            // Velocidade de caminhada normal
-    public float runSpeedMultiplier = 1.8f; // Multiplicador para a velocidade de corrida (ex: 5 * 1.8 = 9)
-    private float currentSpeed;         // A velocidade que está sendo aplicada (speed ou speed * runSpeedMultiplier)
+    public float speed = 5f;
+    public float runMultiplier = 1.8f;
+    private float currentSpeed;
+    private bool isRunning;
+    private float lastTapTime;
+    public float doubleTapTime = 0.25f;
 
-    // Variáveis para o Clique Duplo
-    private float lastTapTime;          // Tempo em que o último clique foi registrado
-    public float doubleTapTimeThreshold = 0.2f; // Tempo máximo entre os cliques para ser considerado duplo
-    private bool isRunning = false;     // Indica se o player está atualmente correndo
-
-    [Header("Configurações Gerais")]
-    public Vector2 posicaoInicial;
-    public GameManager gameManager;
-
-    // Pulo
+    [Header("Pulo")]
     public float jumpForce = 10f;
-    public bool isGround;
+    private bool isGrounded;
     private bool canDoubleJump;
+
+    [Header("Geral")]
+    public Vector2 posicaoInicial;
 
     void Start()
     {
-        posicaoInicial = transform.position;
+        rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        rigd = GetComponent<Rigidbody2D>();
-        currentSpeed = speed; // Inicia com a velocidade normal
+        posicaoInicial = transform.position;
+        currentSpeed = speed;
     }
 
     void Update()
     {
-        HandleDoubleTap(); // Novo: Trata o clique duplo
+        HandleRunInput();
         Move();
         Jump();
+        UpdateAnimations();
     }
 
-    // --- NOVO: Lógica de Clique Duplo (Double Tap) ---
-    void HandleDoubleTap()
+    void HandleRunInput()
     {
-        // 1. Verifica se a tecla D (ou RightArrow) foi pressionada
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) ||
+            Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            // Se o tempo entre o último clique e o clique atual for menor que o limite
-            if (Time.time - lastTapTime < doubleTapTimeThreshold)
-            {
-                // É um clique duplo! Ativa a corrida.
+            if (Time.time - lastTapTime < doubleTapTime)
                 isRunning = true;
-                currentSpeed = speed * runSpeedMultiplier;
-            }
-            lastTapTime = Time.time; // Registra o tempo do clique atual
+            lastTapTime = Time.time;
         }
 
-        // 2. Verifica se a tecla A (ou LeftArrow) foi pressionada
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            if (Time.time - lastTapTime < doubleTapTimeThreshold)
-            {
-                // É um clique duplo! Ativa a corrida.
-                isRunning = true;
-                currentSpeed = speed * runSpeedMultiplier;
-            }
-            lastTapTime = Time.time; // Registra o tempo do clique atual
-        }
-
-        // 3. Desativa a corrida se o player parar de se mover
-        float teclas = Input.GetAxisRaw("Horizontal"); // Usamos Raw para saber se a tecla está segurada
-        if (Mathf.Approximately(teclas, 0f) || !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow) ||
+            Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             isRunning = false;
-            currentSpeed = speed; // Volta para a velocidade normal
         }
+
+        currentSpeed = isRunning ? speed * runMultiplier : speed;
     }
-    // ----------------------------------------------------
 
     void Move()
     {
-        float teclas = Input.GetAxis("Horizontal");
+        float h = Input.GetAxisRaw("Horizontal");
+        rig.linearVelocity = new Vector2(h * currentSpeed, rig.linearVelocity.y);
 
-        // Usa a currentSpeed (que pode ser speed ou speed * runSpeedMultiplier)
-        rigd.linearVelocity = new Vector2(teclas * currentSpeed, rigd.linearVelocity.y);
-
-        // Virar o personagem (usando a propriedade .x do scale para flip)
-        if (teclas > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (teclas < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-
-        // Animações (só no chão)
-        if (isGround)
-        {
-            if (Mathf.Abs(teclas) > 0)
-            {
-                // Se está correndo, usa a animação de corrida (transitions = 3)
-                if (isRunning)
-                {
-                    anim.SetInteger("transitions", 5); // Player_walk (Corrida)
-                }
-                // Se está apenas andando (velocidade normal)
-                else
-                {
-                    anim.SetInteger("transitions", 1); // Andando normal
-                }
-            }
-            else
-            {
-                anim.SetInteger("transitions", 0); // Parado
-            }
-        }
-
-        // Se a velocidade for alterada para correr, é importante que você ajuste o Animator
-        // para que a transição de "Andando" para "Corrida" seja suave.
+        if (h > 0.01f) transform.localScale = new Vector3(1, 1, 1);
+        else if (h < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
     }
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        // aceita W e Space
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
-            // Primeiro pulo
-            if (isGround)
+            if (isGrounded)
             {
-                rigd.linearVelocity = new Vector2(rigd.linearVelocity.x, 0f); // Reseta a velocidade Y antes de pular
-                rigd.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                anim.SetInteger("transitions", 2); // Pulo
-                isGround = false;
+                rig.linearVelocity = new Vector2(rig.linearVelocity.x, 0f);
+                rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                isGrounded = false;
                 canDoubleJump = true;
+
+                // força animação de pulo
+                anim.SetInteger("transitions", 2); // 2 = Jump
             }
-            // Segundo pulo (no ar)
             else if (canDoubleJump)
             {
-                rigd.linearVelocity = new Vector2(rigd.linearVelocity.x, 0f); // Zera a velocidade vertical para um pulo consistente
-                rigd.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                anim.SetInteger("transitions", 2); // Pulo
+                rig.linearVelocity = new Vector2(rig.linearVelocity.x, 0f);
+                rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 canDoubleJump = false;
+
+                anim.SetInteger("transitions", 2); // pulo duplo também usa 2
             }
+        }
+    }
+
+    void UpdateAnimations()
+    {
+        float h = Mathf.Abs(Input.GetAxisRaw("Horizontal"));
+        float velY = rig.linearVelocity.y;
+
+        // atualiza parâmetro vertical (se tiver transições baseadas nisso)
+        anim.SetFloat("velocityY", velY);
+
+        if (!isGrounded)
+        {
+            // Subida / queda: garantir valores corretos
+            if (velY > 0.1f)
+                anim.SetInteger("transitions", 2); // subindo / jump
+            else if (velY < -0.1f)
+                anim.SetInteger("transitions", 6); // caindo / fall
+        }
+        else
+        {
+            // no chão: idle / walk / run
+            if (h > 0.1f)
+                anim.SetInteger("transitions", isRunning ? 3 : 1); // 3=run,1=walk
+            else
+                anim.SetInteger("transitions", 0); // 0 = idle
         }
     }
 
@@ -149,26 +122,28 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("tagGround"))
         {
-            isGround = true;
+            isGrounded = true;
             canDoubleJump = false;
         }
-    }
-
-    public void ReiniciarPosicao()
-    {
-        transform.position = posicaoInicial;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("morreu"))
-        {
-            transform.position = posicaoInicial;
-        }
+            ReiniciarPosicao();
 
         if (collision.CompareTag("prox_f2"))
-        {
             SceneManager.LoadScene("Fase_2");
-        }
+    }
+
+    // Método requerido pelo GameManager e útil para reset manual
+    public void ReiniciarPosicao()
+    {
+        transform.position = posicaoInicial;
+        rig.linearVelocity = Vector2.zero;
+        isRunning = false;
+        isGrounded = true;
+        canDoubleJump = false;
+        anim.SetInteger("transitions", 0);
     }
 }
