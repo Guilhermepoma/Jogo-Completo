@@ -19,6 +19,11 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private bool canDoubleJump;
 
+    [Header("Combate")] // Novo Header para o ataque
+    private bool isAttacking = false; // Variável para controlar o estado de ataque
+    public float attackDuration = 0.5f; // Duração da animação de ataque (ajuste conforme a animação)
+    private float attackTimer;
+
     [Header("Geral")]
     public Vector2 posicaoInicial;
 
@@ -32,11 +37,52 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        // Se estiver atacando, não processa outros movimentos
+        if (isAttacking)
+        {
+            HandleAttackTimer();
+            return; // Sai do Update para priorizar o ataque
+        }
+
+        HandleAttackInput(); // Adiciona a checagem de ataque
         HandleRunInput();
         Move();
         Jump();
         UpdateAnimations();
     }
+
+    // --- Nova Seção de Combate ---
+
+    void HandleAttackInput()
+    {
+        // Verifica se a tecla J foi pressionada e se não está atacando
+        if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
+        {
+            isAttacking = true;
+            attackTimer = attackDuration; // Inicia o timer de ataque
+            anim.SetInteger("transitions", 4); // 4 = Attack
+
+            // Opcional: Para o movimento durante o ataque
+            rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
+        }
+    }
+
+    void HandleAttackTimer()
+    {
+        if (isAttacking)
+        {
+            attackTimer -= Time.deltaTime;
+
+            if (attackTimer <= 0)
+            {
+                isAttacking = false;
+                // Volta para o estado Idle/Andar/Correr após o ataque
+                UpdateAnimations();
+            }
+        }
+    }
+
+    // --- Outros Métodos (Movimento, Pulo, etc.) ---
 
     void HandleRunInput()
     {
@@ -59,6 +105,8 @@ public class Player : MonoBehaviour
 
     void Move()
     {
+        if (isAttacking) return; // Impede o movimento se estiver atacando
+
         float h = Input.GetAxisRaw("Horizontal");
         rig.linearVelocity = new Vector2(h * currentSpeed, rig.linearVelocity.y);
 
@@ -68,6 +116,8 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
+        if (isAttacking) return; // Impede o pulo se estiver atacando
+
         // aceita W e Space
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
@@ -94,6 +144,8 @@ public class Player : MonoBehaviour
 
     void UpdateAnimations()
     {
+        if (isAttacking) return; // A animação de ataque é setada em HandleAttackInput/HandleAttackTimer
+
         float h = Mathf.Abs(Input.GetAxisRaw("Horizontal"));
         float velY = rig.linearVelocity.y;
 
@@ -144,6 +196,7 @@ public class Player : MonoBehaviour
         isRunning = false;
         isGrounded = true;
         canDoubleJump = false;
+        isAttacking = false; // Resetar o estado de ataque
         anim.SetInteger("transitions", 0);
     }
 }
