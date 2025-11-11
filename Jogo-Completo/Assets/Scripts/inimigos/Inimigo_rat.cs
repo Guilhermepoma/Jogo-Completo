@@ -7,6 +7,11 @@ public class Inimigo_rat : MonoBehaviour
     public float speed = 2f;
     public float chaseDistance = 4f;
 
+    [Header("Vida do Inimigo")]
+    public int vida = 3; // Quantidade de vida do rato
+    private bool morto = false;
+    private bool podeTomarDano = true;
+
     private Animator anim;
     private Rigidbody2D rig;
 
@@ -21,15 +26,14 @@ public class Inimigo_rat : MonoBehaviour
 
     void Update()
     {
+        if (morto) return;
+
         float distance = Vector2.Distance(transform.position, player.position);
 
         // Movimento de perseguição
         if (distance < chaseDistance)
         {
-            // *** INÍCIO DA IMPLEMENTAÇÃO DA ANIMAÇÃO (CORRENDO) ***
             anim.SetInteger("transitions", 1); // Correndo
-            // *** FIM DA IMPLEMENTAÇÃO DA ANIMAÇÃO ***
-
             Vector2 direction = (player.position - transform.position).normalized;
             rig.linearVelocity = new Vector2(direction.x * speed, rig.linearVelocity.y);
 
@@ -38,23 +42,47 @@ public class Inimigo_rat : MonoBehaviour
         }
         else
         {
-            // *** INÍCIO DA IMPLEMENTAÇÃO DA ANIMAÇÃO (IDLE) ***
             anim.SetInteger("transitions", 0); // Idle
-                                              // *** FIM DA IMPLEMENTAÇÃO DA ANIMAÇÃO ***
-
             rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
         }
-
-        // A linha abaixo foi removida, pois você quer usar um parâmetro Integer, não Float.
-        // float transitions = (distance < chaseDistance) ? 1f : 0f;
-        // anim.SetFloat("transitions", transitions); 
     }
 
+    // Quando encosta no player → o rato causa dano no jogador
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             gameManager.PerderVidas(1);
         }
+    }
+
+    // --- AQUI é onde o player dá dano no rato ---
+    public void TomarDano(int dano)
+    {
+        if (!podeTomarDano || morto) return;
+
+        vida -= dano;
+        podeTomarDano = false;
+        anim.SetTrigger("hit"); // ativa animação de "tomando dano" (se tiver)
+        Invoke(nameof(PodeTomarDanoDeNovo), 0.3f);
+
+        if (vida <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    void PodeTomarDanoDeNovo()
+    {
+        podeTomarDano = true;
+    }
+
+    void Morrer()
+    {
+        morto = true;
+        anim.SetTrigger("morreu"); // animação de morte (se tiver)
+        rig.linearVelocity = Vector2.zero;
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject, 0.6f); // destrói o inimigo depois da animação
     }
 }

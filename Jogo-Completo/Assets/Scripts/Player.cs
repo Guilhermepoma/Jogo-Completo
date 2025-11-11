@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rig;
+    public PlayerHitbox hitbox;
 
     [Header("Movimento")]
     public float speed = 5f;
@@ -55,15 +56,18 @@ public class Player : MonoBehaviour
 
     void HandleAttackInput()
     {
-        // Verifica se a tecla J foi pressionada e se não está atacando
         if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
         {
             isAttacking = true;
-            attackTimer = attackDuration; // Inicia o timer de ataque
-            anim.SetInteger("transitions", 4); // 4 = Attack
-
-            // Opcional: Para o movimento durante o ataque
+            attackTimer = attackDuration;
+            anim.SetInteger("transitions", 4); // animação de ataque
             rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
+
+            // Ativa a hitbox no momento do ataque
+            if (hitbox != null)
+            {
+                hitbox.AtivarHitbox();
+            }
         }
     }
 
