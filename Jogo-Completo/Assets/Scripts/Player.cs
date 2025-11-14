@@ -5,7 +5,6 @@ public class Player : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rig;
-    public PlayerHitbox hitbox;
 
     [Header("Movimento")]
     public float speed = 5f;
@@ -20,10 +19,16 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private bool canDoubleJump;
 
-    [Header("Combate")] // Novo Header para o ataque
-    private bool isAttacking = false; // Variável para controlar o estado de ataque
-    public float attackDuration = 0.5f; // Duração da animação de ataque (ajuste conforme a animação)
+    [Header("Combate")]
+    private bool isAttacking = false;
+    public float attackDuration = 0.5f;
     private float attackTimer;
+
+    // --- HITBOX ---
+    public Transform attackOrigin;
+    public float radiusAttack = 1f;
+    public LayerMask enemieLayer;
+    // --- FIM HITBOX ---
 
     [Header("Geral")]
     public Vector2 posicaoInicial;
@@ -38,21 +43,20 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // Se estiver atacando, não processa outros movimentos
         if (isAttacking)
         {
             HandleAttackTimer();
-            return; // Sai do Update para priorizar o ataque
+            return;
         }
 
-        HandleAttackInput(); // Adiciona a checagem de ataque
+        HandleAttackInput();
         HandleRunInput();
         Move();
         Jump();
         UpdateAnimations();
     }
 
-    // --- Nova Seção de Combate ---
+    // ------------------ ATAQUE ------------------
 
     void HandleAttackInput()
     {
@@ -60,33 +64,43 @@ public class Player : MonoBehaviour
         {
             isAttacking = true;
             attackTimer = attackDuration;
-            anim.SetInteger("transitions", 4); // animação de ataque
+
+            anim.SetInteger("transitions", 4);
             rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
 
-            // Ativa a hitbox no momento do ataque
-            if (hitbox != null)
-            {
-                hitbox.AtivarHitbox();
-            }
+            AttackHitbox(); // chama a hitbox na hora que aperta J
         }
     }
 
     void HandleAttackTimer()
     {
-        if (isAttacking)
-        {
-            attackTimer -= Time.deltaTime;
+        attackTimer -= Time.deltaTime;
 
-            if (attackTimer <= 0)
-            {
-                isAttacking = false;
-                // Volta para o estado Idle/Andar/Correr após o ataque
-                UpdateAnimations();
-            }
+        if (attackTimer <= 0)
+        {
+            isAttacking = false;
+            UpdateAnimations();
         }
     }
 
-    // --- Outros Métodos (Movimento, Pulo, etc.) ---
+    // --- Sistema de Hitbox ---
+    void AttackHitbox()
+    {
+        Collider2D hit = Physics2D.OverlapBox(
+            attackOrigin.position + transform.right * (radiusAttack / 2),
+            new Vector2(radiusAttack, radiusAttack / 2),
+            0,
+            enemieLayer
+        );
+
+        if (hit)
+        {
+            Destroy(hit.gameObject); // mata o inimigo
+        }
+    }
+    // --- FIM HITBOX ---
+
+    // ------------------
 
     void HandleRunInput()
     {
@@ -109,7 +123,7 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        if (isAttacking) return; // Impede o movimento se estiver atacando
+        if (isAttacking) return;
 
         float h = Input.GetAxisRaw("Horizontal");
         rig.linearVelocity = new Vector2(h * currentSpeed, rig.linearVelocity.y);
@@ -120,9 +134,8 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
-        if (isAttacking) return; // Impede o pulo se estiver atacando
+        if (isAttacking) return;
 
-        // aceita W e Space
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
@@ -132,8 +145,7 @@ public class Player : MonoBehaviour
                 isGrounded = false;
                 canDoubleJump = true;
 
-                // força animação de pulo
-                anim.SetInteger("transitions", 2); // 2 = Jump
+                anim.SetInteger("transitions", 2);
             }
             else if (canDoubleJump)
             {
@@ -141,36 +153,31 @@ public class Player : MonoBehaviour
                 rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 canDoubleJump = false;
 
-                anim.SetInteger("transitions", 2); // pulo duplo também usa 2
+                anim.SetInteger("transitions", 2);
             }
         }
     }
 
     void UpdateAnimations()
     {
-        if (isAttacking) return; // A animação de ataque é setada em HandleAttackInput/HandleAttackTimer
+        if (isAttacking) return;
 
         float h = Mathf.Abs(Input.GetAxisRaw("Horizontal"));
         float velY = rig.linearVelocity.y;
 
-        // atualiza parâmetro vertical (se tiver transições baseadas nisso)
-        anim.SetFloat("velocityY", velY);
-
         if (!isGrounded)
         {
-            // Subida / queda: garantir valores corretos
             if (velY > 0.1f)
-                anim.SetInteger("transitions", 2); // subindo / jump
+                anim.SetInteger("transitions", 2);
             else if (velY < -0.1f)
-                anim.SetInteger("transitions", 6); // caindo / fall
+                anim.SetInteger("transitions", 6);
         }
         else
         {
-            // no chão: idle / walk / run
             if (h > 0.1f)
-                anim.SetInteger("transitions", isRunning ? 3 : 1); // 3=run,1=walk
+                anim.SetInteger("transitions", isRunning ? 3 : 1);
             else
-                anim.SetInteger("transitions", 0); // 0 = idle
+                anim.SetInteger("transitions", 0);
         }
     }
 
@@ -192,7 +199,6 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("Fase_2");
     }
 
-    // Método requerido pelo GameManager e útil para reset manual
     public void ReiniciarPosicao()
     {
         transform.position = posicaoInicial;
@@ -200,7 +206,20 @@ public class Player : MonoBehaviour
         isRunning = false;
         isGrounded = true;
         canDoubleJump = false;
-        isAttacking = false; // Resetar o estado de ataque
+        isAttacking = false;
         anim.SetInteger("transitions", 0);
+    }
+
+    // Gizmo para visualizar hitbox na cena
+    private void OnDrawGizmosSelected()
+    {
+        if (attackOrigin != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(
+                attackOrigin.position + Vector3.right * (radiusAttack / 2f),
+                new Vector3(radiusAttack, radiusAttack / 2f, 1)
+            );
+        }
     }
 }
