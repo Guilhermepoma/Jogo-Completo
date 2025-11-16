@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 8b11c74c0a89845459db2806059633d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6423145300319967527
+    second: MedievalInterior-Tileset_0
+  - first:
+      213: 2842350894189440687
+    second: MedievalInterior-Tileset_1
+  - first:
+      213: 2688731119426136225
+    second: MedievalInterior-Tileset_2
+  - first:
+      213: 5430665592560129221
+    second: MedievalInterior-Tileset_3
+  - first:
+      213: -7408683793703088492
+    second: MedievalInterior-Tileset_4
+  - first:
+      213: 2020307022453663561
+    second: MedievalInterior-Tileset_5
+  - first:
+      213: -3617341711501926010
+    second: MedievalInterior-Tileset_6
+  - first:
+      213: 3834954255038740647
+    second: MedievalInterior-Tileset_7
+  - first:
+      213: -2804648779724407936
+    second: MedievalInterior-Tileset_8
+  - first:
+      213: 79709708639637809
+    second: MedievalInterior-Tileset_9
+  - first:
+      213: -7609602185431126954
+    second: MedievalInterior-Tileset_10
+  - first:
+      213: -3744002967481926688
+    second: MedievalInterior-Tileset_11
+  - first:
+      213: -4187133772602795708
+    second: MedievalInterior-Tileset_12
+  - first:
+      213: 8112966838570074018
+    second: MedievalInterior-Tileset_13
+  - first:
+      213: 4154520956245807275
+    second: MedievalInterior-Tileset_14
+  - first:
+      213: 43500415896387639
+    second: MedievalInterior-Tileset_15
+  - first:
+      213: 5275729381872212272
+    second: MedievalInterior-Tileset_16
+  - first:
+      213: -1344245326460874016
+    second: MedievalInterior-Tileset_17
+  - first:
+      213: -6999937810484122720
+    second: MedievalInterior-Tileset_18
+  - first:
+      213: -7479350721447255018
+    second: MedievalInterior-Tileset_19
+  - first:
+      213: 8207979623470299522
+    second: MedievalInterior-Tileset_20
+  - first:
+      213: -5626249290162968454
+    second: MedievalInterior-Tileset_21
+  - first:
+      213: -1365971390220069671
+    second: MedievalInterior-Tileset_22
+  - first:
+      213: -5954471988174366003
+    second: MedievalInterior-Tileset_23
+  - first:
+      213: 7486032933344216740
+    second: MedievalInterior-Tileset_24
+  - first:
+      213: -1570717810616618026
+    second: MedievalInterior-Tileset_25
+  - first:
+      213: 5787118978443000585
+    second: MedievalInterior-Tileset_26
+  - first:
+      213: 5263829320813572596
+    second: MedievalInterior-Tileset_27
+  - first:
+      213: 7298098933267138223
+    second: MedievalInterior-Tileset_28
+  - first:
+      213: -2155287119222578039
+    second: MedievalInterior-Tileset_29
+  - first:
+      213: -4281962494203031904
+    second: MedievalInterior-Tileset_30
+  - first:
+      213: -8668210805354952759
+    second: MedievalInterior-Tileset_31
+  - first:
+      213: -555020593428474235
+    second: MedievalInterior-Tileset_32
+  - first:
+      213: 6955495213359831098
+    second: MedievalInterior-Tileset_33
+  - first:
+      213: -3506170908811042208
+    second: MedievalInterior-Tileset_34
+  - first:
+      213: -6250438187324848874
+    second: MedievalInterior-Tileset_35
+  - first:
+      213: -4605715280033558217
+    second: MedievalInterior-Tileset_36
+  - first:
+      213: -9218335205151120476
+    second: MedievalInterior-Tileset_37
+  - first:
+      213: 2446729144862564785
+    second: MedievalInterior-Tileset_38
+  - first:
+      213: -8023758897429025595
+    second: MedievalInterior-Tileset_39
+  - first:
+      213: 8742304706250507182
+    second: MedievalInterior-Tileset_40
+  - first:
+      213: 7078551876833454937
+    second: MedievalInterior-Tileset_41
+  - first:
+      213: 5803157382934051614
+    second: MedievalInterior-Tileset_42
+  - first:
+      213: 8786982538380234685
+    second: MedievalInterior-Tileset_43
+  - first:
+      213: -4531471874704884229
+    second: MedievalInterior-Tileset_44
+  - first:
+      213: 5898149915511375718
+    second: MedievalInterior-Tileset_45
+  - first:
+      213: -3064784960434757034
+    second: MedievalInterior-Tileset_46
+  - first:
+      213: 4636386053152477689
+    second: MedievalInterior-Tileset_47
+  - first:
+      213: -5799037381081116532
+    second: MedievalInterior-Tileset_48
+  - first:
+      213: 4680494744094544433
+    second: MedievalInterior-Tileset_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d665b171676cd6a0800000000000000
+      internalID: -6423145300319967527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 111
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faeec2f241f027720800000000000000
+      internalID: 2842350894189440687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 166
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8eee525ba405520800000000000000
+      internalID: 2688731119426136225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c49b7265999d5b40800000000000000
+      internalID: 5430665592560129221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 144
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e422fa7511f2990800000000000000
+      internalID: -7408683793703088492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 139
+        width: 7
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947e39a6882990c10800000000000000
+      internalID: 2020307022453663561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 153
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68169bef0ee9ccdc0800000000000000
+      internalID: -3617341711501926010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 132
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8f475939e783530800000000000000
+      internalID: 3834954255038740647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 147
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b3bc46bc2e319d0800000000000000
+      internalID: -2804648779724407936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 143
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1319d94ce8f2b1100800000000000000
+      internalID: 79709708639637809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 123
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c67573123456690800000000000000
+      internalID: -7609602185431126954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 137
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb3b3d3321aa0cc0800000000000000
+      internalID: -3744002967481926688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 114
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44918f8a40054e5c0800000000000000
+      internalID: -4187133772602795708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 121
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af3e77fa5c079070800000000000000
+      internalID: 8112966838570074018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 131
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba092f05cc2d7a930800000000000000
+      internalID: 4154520956245807275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 120
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7300615d56b8a9000800000000000000
+      internalID: 43500415896387639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 119
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0399599bbe7273940800000000000000
+      internalID: 5275729381872212272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 103
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e212596ff7485de0800000000000000
+      internalID: -1344245326460874016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 108
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aba44c06a93bde90800000000000000
+      internalID: -6999937810484122720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 115
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61423996522043890800000000000000
+      internalID: -7479350721447255018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 111
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2897794daf998e170800000000000000
+      internalID: 8207979623470299522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 113
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78ea0a641c8be1b0800000000000000
+      internalID: -5626249290162968454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 114
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4169002481b0de0800000000000000
+      internalID: -1365971390220069671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 96
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca5adf56477d5da0800000000000000
+      internalID: -5954471988174366003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 96
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a68bd84a4bb3e760800000000000000
+      internalID: 7486032933344216740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 111
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d331d72970b33ae0800000000000000
+      internalID: -1570717810616618026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 101
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b3407ac0aff4050800000000000000
+      internalID: 5787118978443000585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 59
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1f069d0e0ec0940800000000000000
+      internalID: 5263829320813572596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 86
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa68b05105e084560800000000000000
+      internalID: 7298098933267138223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98463c5c8c1e612e0800000000000000
+      internalID: -2155287119222578039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae8b7f5cc96394c0800000000000000
+      internalID: -4281962494203031904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 31
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c78d9cd23454b780800000000000000
+      internalID: -8668210805354952759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 52
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5865badf5bb2c48f0800000000000000
+      internalID: -555020593428474235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 76
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a381e357b02e68060800000000000000
+      internalID: 6955495213359831098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 67
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062628a8224975fc0800000000000000
+      internalID: -3506170908811042208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_35
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 73
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61547f9b59bf149a0800000000000000
+      internalID: -6250438187324848874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_36
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 63
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731d20dda563510c0800000000000000
+      internalID: -4605715280033558217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_37
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 56
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a36d74c8f4e11080800000000000000
+      internalID: -9218335205151120476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_38
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 55
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1e025a13784f120800000000000000
+      internalID: 2446729144862564785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_39
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 34
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ccec536bc1e5a090800000000000000
+      internalID: -8023758897429025595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_40
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 41
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea38946cfc7e25970800000000000000
+      internalID: 8742304706250507182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_41
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 51
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b25de9d611c3260800000000000000
+      internalID: 7078551876833454937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_42
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 47
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b3871b4e4f88050800000000000000
+      internalID: 5803157382934051614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_43
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 49
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfc6bf2012a1f970800000000000000
+      internalID: 8786982538380234685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_44
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 50
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdba86b65afc11c0800000000000000
+      internalID: -4531471874704884229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_45
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 23
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6674e0239107ad150800000000000000
+      internalID: 5898149915511375718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_46
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 28
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652a3500152b775d0800000000000000
+      internalID: -3064784960434757034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_47
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 35
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f19abbfc80c75040800000000000000
+      internalID: 4636386053152477689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_48
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80d27df93ea58fa0800000000000000
+      internalID: -5799037381081116532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MedievalInterior-Tileset_49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 57
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13296d2eb2574f040800000000000000
+      internalID: 4680494744094544433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MedievalInterior-Tileset_0: -6423145300319967527
+      MedievalInterior-Tileset_1: 2842350894189440687
+      MedievalInterior-Tileset_10: -7609602185431126954
+      MedievalInterior-Tileset_11: -3744002967481926688
+      MedievalInterior-Tileset_12: -4187133772602795708
+      MedievalInterior-Tileset_13: 8112966838570074018
+      MedievalInterior-Tileset_14: 4154520956245807275
+      MedievalInterior-Tileset_15: 43500415896387639
+      MedievalInterior-Tileset_16: 5275729381872212272
+      MedievalInterior-Tileset_17: -1344245326460874016
+      MedievalInterior-Tileset_18: -6999937810484122720
+      MedievalInterior-Tileset_19: -7479350721447255018
+      MedievalInterior-Tileset_2: 2688731119426136225
+      MedievalInterior-Tileset_20: 8207979623470299522
+      MedievalInterior-Tileset_21: -5626249290162968454
+      MedievalInterior-Tileset_22: -1365971390220069671
+      MedievalInterior-Tileset_23: -5954471988174366003
+      MedievalInterior-Tileset_24: 7486032933344216740
+      MedievalInterior-Tileset_25: -1570717810616618026
+      MedievalInterior-Tileset_26: 5787118978443000585
+      MedievalInterior-Tileset_27: 5263829320813572596
+      MedievalInterior-Tileset_28: 7298098933267138223
+      MedievalInterior-Tileset_29: -2155287119222578039
+      MedievalInterior-Tileset_3: 5430665592560129221
+      MedievalInterior-Tileset_30: -4281962494203031904
+      MedievalInterior-Tileset_31: -8668210805354952759
+      MedievalInterior-Tileset_32: -555020593428474235
+      MedievalInterior-Tileset_33: 6955495213359831098
+      MedievalInterior-Tileset_34: -3506170908811042208
+      MedievalInterior-Tileset_35: -6250438187324848874
+      MedievalInterior-Tileset_36: -4605715280033558217
+      MedievalInterior-Tileset_37: -9218335205151120476
+      MedievalInterior-Tileset_38: 2446729144862564785
+      MedievalInterior-Tileset_39: -8023758897429025595
+      MedievalInterior-Tileset_4: -7408683793703088492
+      MedievalInterior-Tileset_40: 8742304706250507182
+      MedievalInterior-Tileset_41: 7078551876833454937
+      MedievalInterior-Tileset_42: 5803157382934051614
+      MedievalInterior-Tileset_43: 8786982538380234685
+      MedievalInterior-Tileset_44: -4531471874704884229
+      MedievalInterior-Tileset_45: 5898149915511375718
+      MedievalInterior-Tileset_46: -3064784960434757034
+      MedievalInterior-Tileset_47: 4636386053152477689
+      MedievalInterior-Tileset_48: -5799037381081116532
+      MedievalInterior-Tileset_49: 4680494744094544433
+      MedievalInterior-Tileset_5: 2020307022453663561
+      MedievalInterior-Tileset_6: -3617341711501926010
+      MedievalInterior-Tileset_7: 3834954255038740647
+      MedievalInterior-Tileset_8: -2804648779724407936
+      MedievalInterior-Tileset_9: 79709708639637809
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

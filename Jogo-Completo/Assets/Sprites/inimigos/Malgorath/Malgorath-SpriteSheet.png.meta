@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 894f0eab560b0f14ba227cc7220c4871
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3311120379914146236
+    second: Malgorath-SpriteSheet_0
+  - first:
+      213: -1025004593882415949
+    second: Malgorath-SpriteSheet_1
+  - first:
+      213: 6972942999634605566
+    second: Malgorath-SpriteSheet_2
+  - first:
+      213: 7620961575409247208
+    second: Malgorath-SpriteSheet_3
+  - first:
+      213: 3492445981387100207
+    second: Malgorath-SpriteSheet_4
+  - first:
+      213: -7318738321582930427
+    second: Malgorath-SpriteSheet_5
+  - first:
+      213: -4000930645815130795
+    second: Malgorath-SpriteSheet_6
+  - first:
+      213: -5977114287779536856
+    second: Malgorath-SpriteSheet_7
+  - first:
+      213: 5112990644441968423
+    second: Malgorath-SpriteSheet_8
+  - first:
+      213: 8232685403712094860
+    second: Malgorath-SpriteSheet_9
+  - first:
+      213: 2785100267753108990
+    second: Malgorath-SpriteSheet_10
+  - first:
+      213: -5000231187262926225
+    second: Malgorath-SpriteSheet_11
+  - first:
+      213: -1899987367727618365
+    second: Malgorath-SpriteSheet_12
+  - first:
+      213: -4625114686233525997
+    second: Malgorath-SpriteSheet_13
+  - first:
+      213: 8809760769951758088
+    second: Malgorath-SpriteSheet_14
+  - first:
+      213: 3246847872212405357
+    second: Malgorath-SpriteSheet_15
+  - first:
+      213: -5733181894012590223
+    second: Malgorath-SpriteSheet_16
+  - first:
+      213: -7931031144419210295
+    second: Malgorath-SpriteSheet_17
+  - first:
+      213: -900982740382077569
+    second: Malgorath-SpriteSheet_18
+  - first:
+      213: 8911298980906345673
+    second: Malgorath-SpriteSheet_19
+  - first:
+      213: -670974128451706147
+    second: Malgorath-SpriteSheet_20
+  - first:
+      213: -4846366998246416373
+    second: Malgorath-SpriteSheet_21
+  - first:
+      213: 9031273737934813644
+    second: Malgorath-SpriteSheet_22
+  - first:
+      213: -6509103572798787282
+    second: Malgorath-SpriteSheet_23
+  - first:
+      213: -527106517782043618
+    second: Malgorath-SpriteSheet_24
+  - first:
+      213: -3315401956246467449
+    second: Malgorath-SpriteSheet_25
+  - first:
+      213: 3134776975977807753
+    second: Malgorath-SpriteSheet_26
+  - first:
+      213: 5798306602408826529
+    second: Malgorath-SpriteSheet_27
+  - first:
+      213: 2755324579455143319
+    second: Malgorath-SpriteSheet_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3699
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e29aabe898c02d0800000000000000
+      internalID: -3311120379914146236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 3699
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bcbe78a0c376c1f0800000000000000
+      internalID: -1025004593882415949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3483
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef57444c6bed4c060800000000000000
+      internalID: 6972942999634605566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 3483
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e36b2ddc2813c960800000000000000
+      internalID: 7620961575409247208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3267
+        width: 192
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2091d5cd19a77030800000000000000
+      internalID: 3492445981387100207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 3267
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506c20ad54e9e6a90800000000000000
+      internalID: -7318738321582930427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 3051
+        width: 192
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555073586c6d978c0800000000000000
+      internalID: -4000930645815130795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 3051
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8202dfe29360d0da0800000000000000
+      internalID: -5977114287779536856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2835
+        width: 192
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72febddb6edf4f640800000000000000
+      internalID: 5112990644441968423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 2835
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c828dcb81cf504270800000000000000
+      internalID: 8232685403712094860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2619
+        width: 192
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5f44bffe9a6a620800000000000000
+      internalID: 2785100267753108990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 2619
+        width: 767
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f621d504a3c9b9ab0800000000000000
+      internalID: -5000231187262926225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2404
+        width: 192
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6addc3e83e1a5e0800000000000000
+      internalID: -1899987367727618365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 2403
+        width: 767
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311cb91a2ba40dfb0800000000000000
+      internalID: -4625114686233525997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2189
+        width: 192
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80775218ebe824a70800000000000000
+      internalID: 8809760769951758088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 2187
+        width: 437
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c04feefee1f0d20800000000000000
+      internalID: 3246847872212405357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1973
+        width: 192
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177adae6175af60b0800000000000000
+      internalID: -5733181894012590223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1971
+        width: 349
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb455ec1315fe190800000000000000
+      internalID: -7931031144419210295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1757
+        width: 192
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7da4c2a8f01f73f0800000000000000
+      internalID: -900982740382077569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1755
+        width: 245
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c42934853b4bab70800000000000000
+      internalID: 8911298980906345673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1541
+        width: 192
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2a82cc59830b6f0800000000000000
+      internalID: -670974128451706147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1539
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00a85a64ee3ebcb0800000000000000
+      internalID: -4846366998246416373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1324
+        width: 192
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc93bea6d97855d70800000000000000
+      internalID: 9031273737934813644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1107
+        width: 192
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e213a1989c40ba5a0800000000000000
+      internalID: -6509103572798787282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 891
+        width: 192
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14eec03a675fa8f0800000000000000
+      internalID: -527106517782043618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 675
+        width: 192
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c4b4e8c735df1d0800000000000000
+      internalID: -3315401956246467449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 459
+        width: 192
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ffa370d07f08b20800000000000000
+      internalID: 3134776975977807753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 243
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a651675229b77050800000000000000
+      internalID: 5798306602408826529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Malgorath-SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 27
+        width: 192
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d835f4b11ec3620800000000000000
+      internalID: 2755324579455143319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Malgorath-SpriteSheet_0: -3311120379914146236
+      Malgorath-SpriteSheet_1: -1025004593882415949
+      Malgorath-SpriteSheet_10: 2785100267753108990
+      Malgorath-SpriteSheet_11: -5000231187262926225
+      Malgorath-SpriteSheet_12: -1899987367727618365
+      Malgorath-SpriteSheet_13: -4625114686233525997
+      Malgorath-SpriteSheet_14: 8809760769951758088
+      Malgorath-SpriteSheet_15: 3246847872212405357
+      Malgorath-SpriteSheet_16: -5733181894012590223
+      Malgorath-SpriteSheet_17: -7931031144419210295
+      Malgorath-SpriteSheet_18: -900982740382077569
+      Malgorath-SpriteSheet_19: 8911298980906345673
+      Malgorath-SpriteSheet_2: 6972942999634605566
+      Malgorath-SpriteSheet_20: -670974128451706147
+      Malgorath-SpriteSheet_21: -4846366998246416373
+      Malgorath-SpriteSheet_22: 9031273737934813644
+      Malgorath-SpriteSheet_23: -6509103572798787282
+      Malgorath-SpriteSheet_24: -527106517782043618
+      Malgorath-SpriteSheet_25: -3315401956246467449
+      Malgorath-SpriteSheet_26: 3134776975977807753
+      Malgorath-SpriteSheet_27: 5798306602408826529
+      Malgorath-SpriteSheet_28: 2755324579455143319
+      Malgorath-SpriteSheet_3: 7620961575409247208
+      Malgorath-SpriteSheet_4: 3492445981387100207
+      Malgorath-SpriteSheet_5: -7318738321582930427
+      Malgorath-SpriteSheet_6: -4000930645815130795
+      Malgorath-SpriteSheet_7: -5977114287779536856
+      Malgorath-SpriteSheet_8: 5112990644441968423
+      Malgorath-SpriteSheet_9: 8232685403712094860
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
