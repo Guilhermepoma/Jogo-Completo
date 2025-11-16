@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rig;
+    private GameManager gameManager;
 
     [Header("Movimento")]
     public float speed = 5f;
@@ -24,25 +25,41 @@ public class Player : MonoBehaviour
     public float attackDuration = 0.5f;
     private float attackTimer;
 
-    // --- HITBOX ---
+    [Header("HITBOX")]
     public Transform attackOrigin;
     public float radiusAttack = 1f;
     public LayerMask enemieLayer;
-    // --- FIM HITBOX ---
+
+    [Header("Dano / Invencibilidade")]
+    public bool isInvincible = false;
+    public float invincibleTime = 1f;
+    public float blinkSpeed = 0.1f;
+
+    public float knockbackForce = 10f;
+    public float knockbackDuration = 0.15f;
+    private bool isKnockback = false;
 
     [Header("Geral")]
     public Vector2 posicaoInicial;
+
+    private bool isDead = false;
 
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        gameManager = FindAnyObjectByType<GameManager>();
+
         posicaoInicial = transform.position;
         currentSpeed = speed;
     }
 
     void Update()
     {
+        if (isDead) return;
+        if (isKnockback) return;
+
         if (isAttacking)
         {
             HandleAttackTimer();
@@ -56,10 +73,68 @@ public class Player : MonoBehaviour
         UpdateAnimations();
     }
 
-    // ------------------ ATAQUE ------------------
+    // ---------- SISTEMA DE DANO ----------
+    public void TomarDano(int quantidade)
+    {
+        if (isInvincible || isKnockback || isDead)
+            return;
 
+        anim.SetTrigger("hit");
+
+        if (gameManager != null)
+            gameManager.PerderVidas(quantidade);
+
+        // --- MORREU ---
+        if (gameManager.vidas <= 0)
+        {
+            Morrer();
+            return;
+        }
+
+        StartCoroutine(Invencibilidade());
+        StartCoroutine(Knockback());
+    }
+    // -------------------------------------
+
+    private void Morrer()
+    {
+        Debug.Log("Player morreu!");
+
+        isDead = true;
+
+        // Travar movimentação
+        rig.linearVelocity = Vector2.zero;
+        rig.gravityScale = 0f;
+
+        // Desativar colisão para não cair do mapa
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
+        // Anim de morte
+        anim.SetInteger("transitions", 6);
+
+        // Impedir qualquer ação
+        isAttacking = true;
+        isKnockback = true;
+        isInvincible = true;
+
+        // Trocar de cena depois de 5s
+        StartCoroutine(VoltarMenu());
+    }
+
+    // ---------- VOLTAR PARA O MENU ----------
+    private System.Collections.IEnumerator VoltarMenu()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Menu");
+    }
+    // ----------------------------------------
+
+    // --------------- ATAQUE ---------------
     void HandleAttackInput()
     {
+        if (isDead) return;
+
         if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
         {
             isAttacking = true;
@@ -68,7 +143,7 @@ public class Player : MonoBehaviour
             anim.SetInteger("transitions", 4);
             rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
 
-            AttackHitbox(); // chama a hitbox na hora que aperta J
+            AttackHitbox();
         }
     }
 
@@ -83,7 +158,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    // --- Sistema de Hitbox ---
     void AttackHitbox()
     {
         Collider2D hit = Physics2D.OverlapBox(
@@ -95,12 +169,10 @@ public class Player : MonoBehaviour
 
         if (hit)
         {
-            Destroy(hit.gameObject); // mata o inimigo
+            Destroy(hit.gameObject);
         }
     }
-    // --- FIM HITBOX ---
-
-    // ------------------
+    // --------------------------------------
 
     void HandleRunInput()
     {
@@ -123,18 +195,23 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        if (isAttacking) return;
+        if (isAttacking || isDead) return;
 
         float h = Input.GetAxisRaw("Horizontal");
         rig.linearVelocity = new Vector2(h * currentSpeed, rig.linearVelocity.y);
 
-        if (h > 0.01f) transform.localScale = new Vector3(1, 1, 1);
-        else if (h < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
+        if (h > 0.01f)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (h < -0.01f)
+            transform.localScale = new Vector3(-1, 1, 1);
+
+        if (attackOrigin != null)
+            attackOrigin.localScale = new Vector3(transform.localScale.x, 1, 1);
     }
 
     void Jump()
     {
-        if (isAttacking) return;
+        if (isAttacking || isDead) return;
 
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
@@ -160,7 +237,7 @@ public class Player : MonoBehaviour
 
     void UpdateAnimations()
     {
-        if (isAttacking) return;
+        if (isAttacking || isDead) return;
 
         float h = Mathf.Abs(Input.GetAxisRaw("Horizontal"));
         float velY = rig.linearVelocity.y;
@@ -188,29 +265,62 @@ public class Player : MonoBehaviour
             isGrounded = true;
             canDoubleJump = false;
         }
+
+        if (collision.gameObject.CompareTag("Inimigo"))
+        {
+            TomarDano(1);
+            Debug.Log("Player tomou dano do inimigo!");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("morreu"))
-            ReiniciarPosicao();
+            TomarDano(1);
 
         if (collision.CompareTag("prox_f2"))
             SceneManager.LoadScene("Fase_2");
     }
 
-    public void ReiniciarPosicao()
+    // ---------- KNOCKBACK ----------
+    private System.Collections.IEnumerator Knockback()
     {
-        transform.position = posicaoInicial;
-        rig.linearVelocity = Vector2.zero;
-        isRunning = false;
-        isGrounded = true;
-        canDoubleJump = false;
-        isAttacking = false;
-        anim.SetInteger("transitions", 0);
+        if (isDead) yield break;
+
+        isKnockback = true;
+
+        float direction = transform.localScale.x > 0 ? -1 : 1;
+
+        rig.linearVelocity = new Vector2(direction * knockbackForce, rig.linearVelocity.y);
+
+        yield return new WaitForSeconds(knockbackDuration);
+
+        isKnockback = false;
     }
 
-    // Gizmo para visualizar hitbox na cena
+    // ---------- INVENCIBILIDADE ----------
+    private System.Collections.IEnumerator Invencibilidade()
+    {
+        if (isDead) yield break;
+
+        isInvincible = true;
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+
+        float timer = 0f;
+
+        while (timer < invincibleTime)
+        {
+            sr.enabled = !sr.enabled;
+            timer += blinkSpeed;
+            yield return new WaitForSeconds(blinkSpeed);
+        }
+
+        sr.enabled = true;
+        isInvincible = false;
+    }
+
+    // Gizmo do ataque
     private void OnDrawGizmosSelected()
     {
         if (attackOrigin != null)

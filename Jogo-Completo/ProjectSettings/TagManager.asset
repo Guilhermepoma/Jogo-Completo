@@ -7,6 +7,7 @@ TagManager:
   - tagGround
   - morreu
   - prox_f2
+  - Inimigo
   layers:
   - Default
   - TransparentFX
