@@ -1,5 +1,7 @@
-using System.Collections;
+using System.Runtime.ConstrainedExecution;
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86;
+using System.Collections;
 
 public class Inimigo_esqueleto : MonoBehaviour
 {
@@ -26,6 +28,7 @@ public class Inimigo_esqueleto : MonoBehaviour
     private float currentDirection = 0f;
 
     public GameObject hitboxAtaque;
+
 
     void Start()
     {
@@ -75,7 +78,7 @@ public class Inimigo_esqueleto : MonoBehaviour
         {
             podeAtacar = false;
 
-            anim.SetInteger("transitions", 2); // ATAQUE começa imediatamente
+            anim.SetInteger("transitions", 2); // ATAQUE
 
             StartCoroutine(AtivarHitbox());
 
@@ -85,13 +88,14 @@ public class Inimigo_esqueleto : MonoBehaviour
 
     IEnumerator AtivarHitbox()
     {
-        yield return new WaitForSeconds(0.1f); // delay antes do golpe (menor que antes)
+        yield return new WaitForSeconds(0.15f); // tempo até o golpe acertar (ajustável)
 
         hitboxAtaque.SetActive(true);
 
-        yield return new WaitForSeconds(0.15f); // tempo ativo da hitbox
+        yield return new WaitForSeconds(0.2f); // tempo ativo da hitbox
         hitboxAtaque.SetActive(false);
     }
+
 
     void ResetarAtaque()
     {
