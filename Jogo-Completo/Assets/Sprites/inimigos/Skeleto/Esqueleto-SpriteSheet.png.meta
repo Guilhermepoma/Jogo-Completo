@@ -147,7 +147,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 13
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -199,12 +199,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 319
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 319
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 48
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,12 +243,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 113
-        y: 319
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 96
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 18
-        y: 287
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 144
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 65
-        y: 287
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 192
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,12 +309,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 101
-        y: 289
-        width: 41
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,12 +331,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 18
-        y: 255
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 48
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -353,12 +353,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 255
-        width: 12
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 96
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -375,12 +375,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 101
-        y: 255
-        width: 41
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 144
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -397,12 +397,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 18
-        y: 223
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 288
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -419,12 +419,12 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 223
-        width: 12
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 336
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -441,10 +441,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 100
-        y: 223
-        width: 42
-        height: 24
+        x: 0
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +463,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_17
       rect:
         serializedVersion: 2
-        x: 18
-        y: 191
-        width: 12
-        height: 17
+        x: 96
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,10 +485,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_18
       rect:
         serializedVersion: 2
-        x: 67
-        y: 191
-        width: 17
-        height: 19
+        x: 144
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,10 +507,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_19
       rect:
         serializedVersion: 2
-        x: 99
-        y: 191
-        width: 43
-        height: 21
+        x: 192
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -529,10 +529,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_21
       rect:
         serializedVersion: 2
-        x: 18
-        y: 159
-        width: 12
-        height: 17
+        x: 288
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,10 +551,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_22
       rect:
         serializedVersion: 2
-        x: 68
-        y: 159
-        width: 17
-        height: 18
+        x: 336
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,10 +573,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_24
       rect:
         serializedVersion: 2
-        x: 99
-        y: 159
-        width: 42
-        height: 18
+        x: 432
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -595,10 +595,10 @@ TextureImporter:
       name: Esqueleto-SpriteSheet_25
       rect:
         serializedVersion: 2
-        x: 18
-        y: 127
-        width: 12
-        height: 17
+        x: 480
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,155 +614,155 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esqueleto-SpriteSheet_26
+      name: Esqueleto-SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 68
-        y: 127
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 240
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 337734e4681827010800000000000000
-      internalID: 1185152065790506803
+      spriteID: df58627e2ea11ae4a819b8f9ccc0dca8
+      internalID: -1909563514458927529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esqueleto-SpriteSheet_27
+      name: Esqueleto-SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 99
-        y: 127
-        width: 43
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 288
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2fe3090eee6d7c190800000000000000
-      internalID: -7942143096386470158
+      spriteID: c9d84006728aae940b84b41d34795a32
+      internalID: 7523162811880637877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esqueleto-SpriteSheet_28
+      name: Esqueleto-SpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 68
-        y: 95
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 192
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 33337a7912f7716a0800000000000000
-      internalID: -6478569756694203597
+      spriteID: 85e386b2da1bd554fb81354c3bbc4d9e
+      internalID: -5672246473294177660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esqueleto-SpriteSheet_29
+      name: Esqueleto-SpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 98
-        y: 95
-        width: 20
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 240
+        y: 32
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1947479e5353403b0800000000000000
-      internalID: -5547250335347346287
+      spriteID: 057bf317726d70247b7426c3e82cf767
+      internalID: 7369392224497847081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esqueleto-SpriteSheet_30
+      name: Esqueleto-SpriteSheet_16
       rect:
         serializedVersion: 2
-        x: 98
+        x: 48
         y: 0
-        width: 41
-        height: 101
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fe43ea6fef7e33770800000000000000
-      internalID: 8589463996571989231
+      spriteID: 7984e630066a01f48b57a19d1f074dae
+      internalID: -8702591069938866243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esqueleto-SpriteSheet_31
+      name: Esqueleto-SpriteSheet_20
       rect:
         serializedVersion: 2
-        x: 97
-        y: 31
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ee9a3467adcf30c0800000000000000
-      internalID: -4593726976069820697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Esqueleto-SpriteSheet_32
-      rect:
-        serializedVersion: 2
-        x: 97
+        x: 240
         y: 0
-        width: 7
-        height: 5
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c890389c0f0d39480800000000000000
-      internalID: -8893535106535061108
+      spriteID: 0180794420ef9794f94e092a5ae592cb
+      internalID: -6458201762176171250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Esqueleto-SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0436dca6199dbe4685cea4882281ab0
+      internalID: -5884339291485913452
       vertices: []
       indices: 
       edges: []
@@ -800,14 +800,7 @@ TextureImporter:
       Esqueleto-SpriteSheet_23: -5884339291485913452
       Esqueleto-SpriteSheet_24: 1417322673165234671
       Esqueleto-SpriteSheet_25: -6178346534296273924
-      Esqueleto-SpriteSheet_26: 1185152065790506803
-      Esqueleto-SpriteSheet_27: -7942143096386470158
-      Esqueleto-SpriteSheet_28: -6478569756694203597
-      Esqueleto-SpriteSheet_29: -5547250335347346287
       Esqueleto-SpriteSheet_3: -6946957888670178947
-      Esqueleto-SpriteSheet_30: 8589463996571989231
-      Esqueleto-SpriteSheet_31: -4593726976069820697
-      Esqueleto-SpriteSheet_32: -8893535106535061108
       Esqueleto-SpriteSheet_4: -551973727688905044
       Esqueleto-SpriteSheet_5: -1909563514458927529
       Esqueleto-SpriteSheet_6: 7523162811880637877
