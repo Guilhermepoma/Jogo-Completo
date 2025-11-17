@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void StartGame()
     {
         SceneManager.LoadScene(1);
@@ -35,5 +34,15 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
+    }
+
+    // Função para sair do jogo
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; // Fecha o jogo no editor
+#else
+        Application.Quit(); // Fecha o jogo na build
+#endif
     }
 }
