@@ -37,13 +37,30 @@ public class PlayerRefatorado : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
-    [Header("Combate")]
-    public float attackDuration = 0.5f;
-    public Transform attackOrigin;
-    public float radiusAttack = 1f;
-    public LayerMask enemieLayer;
+    // ATAQUE NORMAL
+    [Header("Ataque Normal")]
+    public float attackRange = 1f;
+    public float attackCooldown = 0.3f;
+    public LayerMask enemyLayer;
+    public float pushForce = 5f;
+    public float attackInvincibleTime = 0.3f;
+
+    private bool canAttack = true;
+    private bool isInvincibleAttack = false;
     private bool isAttacking = false;
-    private float attackTimer;
+
+    // ATAQUE ESPECIAL (Boneco Simples)
+    [Header("Ataque para Boneco Simples")]
+    public Transform attackOrigin;
+    public float radiusAttack = 1.2f;
+    public LayerMask enemieLayer;
+
+    // NOVO ATAQUE ESPECIAL (Malgo)
+    [Header("Novo Ataque Especial")]
+    public Transform attackOriginMalgo;
+    public float radiusAttackMalgo = 1.2f;
+    public LayerMask enemyLayerMalgo;
+    public float pushForceMalgo = 5f;
 
     [Header("Estado")]
     public bool isInvincible = false;
@@ -68,15 +85,11 @@ public class PlayerRefatorado : MonoBehaviour
         anim = GetComponent<Animator>();
         gameManager = FindAnyObjectByType<GameManager>();
 
-        // Pega ou adiciona AudioSource
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
 
         posicaoInicial = transform.position;
-
-        if (groundLayer.value == 0)
-            Debug.LogWarning("Ground Layer não definida. Use um LayerMask ou tag 'tagGround'.");
     }
 
     void Update()
@@ -84,31 +97,128 @@ public class PlayerRefatorado : MonoBehaviour
         if (isDead || isKnockback) return;
 
         CheckGround();
-
-        HandleAttackInput();
-
-        if (isAttacking)
-            HandleAttackTimer();
-
         HandleRunInput();
         HandleJumpInput();
-
         Move();
-        UpdateAnimations();
+
+        if (!isAttacking)
+            UpdateAnimations();
+
+        HandleAttackInput();
     }
 
-    void CheckGround()
+    // === INPUT DE ATAQUE ===
+    void HandleAttackInput()
     {
-        if (groundLayer.value != 0)
-            isGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        else
+        if (Input.GetKeyDown(KeyCode.J))
         {
-            isGround = false;
-            Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius);
-            foreach (Collider2D hit in hits)
-                if (hit.CompareTag("tagGround")) { isGround = true; break; }
+            // ataque especial Boneco Simples
+            AtaqueBonecoSimples();
+            NovoAtaqueEspecialMalgo();
+
+            // ataque normal
+            if (canAttack)
+                StartCoroutine(NovoAtaque());
+        }
+    }
+
+    // === ATAQUE ESPECIAL BONECO SIMPLES (intocado) ===
+    void AtaqueBonecoSimples()
+    {
+        int facingDir = transform.localScale.x > 0 ? 1 : -1;
+        Vector3 boxPos = attackOrigin.position + new Vector3(facingDir * (radiusAttack / 2), 0, 0);
+
+        Collider2D hit = Physics2D.OverlapBox(
+            boxPos,
+            new Vector2(radiusAttack, radiusAttack / 2),
+            0f,
+            enemieLayer
+        );
+
+        if (hit != null)
+        {
+            Boneco_Simples bs = hit.GetComponent<Boneco_Simples>();
+            if (bs != null)
+                Destroy(hit.gameObject);
+        }
+    }
+
+    // === NOVO ATAQUE ESPECIAL (Malgo) ===
+    void NovoAtaqueEspecialMalgo()
+    {
+        int facingDir = transform.localScale.x > 0 ? 1 : -1;
+        Vector3 boxPos = attackOriginMalgo.position + new Vector3(facingDir * (radiusAttackMalgo / 2), 0, 0);
+
+        Collider2D hit = Physics2D.OverlapBox(
+            boxPos,
+            new Vector2(radiusAttackMalgo, radiusAttackMalgo / 2),
+            0f,
+            enemyLayerMalgo
+        );
+
+        if (hit != null)
+        {
+            IDano dano = hit.GetComponent<IDano>();
+            if (dano != null)
+            {
+                dano.TakeHit();
+                Debug.Log("Novo ataque especial acertou: " + hit.name);
+
+                Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    Vector2 push = (hit.transform.position - transform.position).normalized;
+                    rb.AddForce(push * pushForceMalgo, ForceMode2D.Impulse);
+                }
+            }
+        }
+    }
+
+    // === ATAQUE NORMAL ===
+    IEnumerator NovoAtaque()
+    {
+        canAttack = false;
+        isAttacking = true;
+
+        anim.SetInteger("transitions", ANIM_ATAQUE);
+        rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
+
+        if (somAtaque != null)
+            audioSource.PlayOneShot(somAtaque);
+
+        isInvincibleAttack = true;
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
+
+        foreach (Collider2D inimigo in hitEnemies)
+        {
+            var dano = inimigo.GetComponent<IDano>();
+            if (dano != null)
+            {
+                dano.TakeHit();
+
+                Rigidbody2D rb = inimigo.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    Vector2 push = (inimigo.transform.position - transform.position).normalized;
+                    rb.AddForce(push * pushForce, ForceMode2D.Impulse);
+                }
+            }
         }
 
+        yield return new WaitForSeconds(attackInvincibleTime);
+        isInvincibleAttack = false;
+
+        yield return new WaitForSeconds(0.25f);
+        isAttacking = false;
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
+
+    // === MOVIMENTO ===
+    void CheckGround()
+    {
+        isGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         if (isGround) canDoubleJump = true;
     }
 
@@ -116,22 +226,15 @@ public class PlayerRefatorado : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) ||
-            Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
         {
-            if (Time.time - lastTapTime < doubleTapTime) isRunning = true;
+            if (Time.time - lastTapTime < doubleTapTime)
+                isRunning = true;
+
             lastTapTime = Time.time;
         }
 
-        if (h == 0)
-            isRunning = false;
-        else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow) ||
-                 Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            if (!(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ||
-                  Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)))
-                isRunning = false;
-        }
+        if (h == 0) isRunning = false;
 
         currentSpeed = isRunning ? speed * runMultiplier : speed;
     }
@@ -141,108 +244,57 @@ public class PlayerRefatorado : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         rig.linearVelocity = new Vector2(h * currentSpeed, rig.linearVelocity.y);
 
-        if (h > 0.01f) transform.localScale = new Vector3(1, 1, 1);
-        else if (h < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
-
-        if (attackOrigin != null)
-            attackOrigin.localScale = new Vector3(transform.localScale.x, 1, 1);
+        if (h > 0.1f) transform.localScale = new Vector3(1, 1, 1);
+        else if (h < -0.1f) transform.localScale = new Vector3(-1, 1, 1);
     }
 
     void HandleJumpInput()
     {
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             if (isGround || canDoubleJump)
             {
-                PerformJump();
-                if (!isGround) canDoubleJump = false;
-                anim.SetInteger("transitions", ANIM_PULANDO);
+                rig.linearVelocity = new Vector2(rig.linearVelocity.x, 0);
+                rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-                // Som de pulo
-                if (somPulo != null)
-                    audioSource.PlayOneShot(somPulo);
+                if (!isGround) canDoubleJump = false;
+
+                if (somPulo) audioSource.PlayOneShot(somPulo);
             }
         }
     }
 
-    void PerformJump()
-    {
-        rig.linearVelocity = new Vector2(rig.linearVelocity.x, 0f);
-        rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        isGround = false;
-    }
-
     void UpdateAnimations()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float velY = rig.linearVelocity.y;
+        float h = Mathf.Abs(Input.GetAxisRaw("Horizontal"));
+        float y = rig.linearVelocity.y;
 
-        if (velY < -0.1f) anim.SetInteger("transitions", ANIM_CAINDO);
-        else if (velY > 0.1f) anim.SetInteger("transitions", ANIM_PULANDO);
+        if (y < -0.1f) anim.SetInteger("transitions", ANIM_CAINDO);
+        else if (y > 0.1f) anim.SetInteger("transitions", ANIM_PULANDO);
         else if (isGround)
         {
-            if (Mathf.Abs(h) > 0.01f)
+            if (h > 0.1f)
                 anim.SetInteger("transitions", isRunning ? ANIM_CORRENDO : ANIM_ANDANDO);
             else
                 anim.SetInteger("transitions", ANIM_PARADO);
         }
     }
 
-    void HandleAttackInput()
-    {
-        if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
-        {
-            isAttacking = true;
-            attackTimer = attackDuration;
-
-            anim.SetInteger("transitions", ANIM_ATAQUE);
-            rig.linearVelocity = new Vector2(0, rig.linearVelocity.y);
-
-            AttackHitbox();
-
-            // Som de ataque
-            if (somAtaque != null)
-                audioSource.PlayOneShot(somAtaque);
-
-            Debug.Log("Ataque iniciado!");
-        }
-    }
-
-    void HandleAttackTimer()
-    {
-        attackTimer -= Time.deltaTime;
-        if (attackTimer <= 0) isAttacking = false;
-    }
-
-    void AttackHitbox()
-    {
-        if (attackOrigin == null) return;
-
-        Collider2D hit = Physics2D.OverlapBox(
-            attackOrigin.position + transform.right * (radiusAttack / 2),
-            new Vector2(radiusAttack, radiusAttack / 2),
-            0,
-            enemieLayer
-        );
-
-        if (hit) Destroy(hit.gameObject);
-    }
-
-    // ---------- DANO ----------
+    // === DANO ===
     public void TomarDano(int quantidade)
     {
-        if (isInvincible || isKnockback || isDead) return;
+        if (isInvincible || isInvincibleAttack || isKnockback || isDead) return;
 
-        anim.SetTrigger("hit");
-
-        // Som de dano
-        if (somDano != null)
-            audioSource.PlayOneShot(somDano);
+        if (somDano) audioSource.PlayOneShot(somDano);
 
         if (gameManager != null)
             gameManager.PerderVidas(quantidade);
 
-        if (gameManager.vidas <= 0) { Morrer(); return; }
+        if (gameManager.vidas <= 0)
+        {
+            Morrer();
+            return;
+        }
 
         StartCoroutine(Invencibilidade());
         StartCoroutine(Knockback());
@@ -250,91 +302,77 @@ public class PlayerRefatorado : MonoBehaviour
 
     private void Morrer()
     {
-        Debug.Log("Player morreu!");
         isDead = true;
-
         rig.linearVelocity = Vector2.zero;
-        rig.gravityScale = 0f;
-
-        Collider2D col = GetComponent<Collider2D>();
-        if (col != null) col.enabled = false;
+        rig.gravityScale = 0;
+        GetComponent<Collider2D>().enabled = false;
 
         anim.SetInteger("transitions", ANIM_MORTE);
-
-        isAttacking = true;
-        isKnockback = true;
-        isInvincible = true;
-
         StartCoroutine(VoltarMenu());
     }
 
-    private IEnumerator VoltarMenu()
+    IEnumerator VoltarMenu()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("Menu");
     }
 
-    private IEnumerator Knockback()
+    IEnumerator Knockback()
     {
-        if (isDead) yield break;
-
         isKnockback = true;
-        float direction = transform.localScale.x > 0 ? -1 : 1;
-        rig.linearVelocity = new Vector2(direction * knockbackForce, rig.linearVelocity.y);
+
+        float dir = transform.localScale.x > 0 ? -1 : 1;
+        rig.linearVelocity = new Vector2(dir * knockbackForce, rig.linearVelocity.y);
 
         yield return new WaitForSeconds(knockbackDuration);
         isKnockback = false;
     }
 
-    private IEnumerator Invencibilidade()
+    IEnumerator Invencibilidade()
     {
-        if (isDead) yield break;
-
         isInvincible = true;
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        float timer = 0f;
 
-        while (timer < invincibleTime)
+        float t = 0;
+        while (t < invincibleTime)
         {
             sr.enabled = !sr.enabled;
-            timer += blinkSpeed;
             yield return new WaitForSeconds(blinkSpeed);
+            t += blinkSpeed;
         }
 
         sr.enabled = true;
         isInvincible = false;
     }
 
+    private void OnDrawGizmos()
+    {
+        if (attackOrigin == null) return;
+
+        Gizmos.color = Color.blue;
+        int facingDir = transform.localScale.x > 0 ? 1 : -1;
+        Vector3 boxPos = attackOrigin.position + new Vector3(facingDir * (radiusAttack / 2), 0, 0);
+        Gizmos.DrawWireCube(boxPos, new Vector3(radiusAttack, radiusAttack / 2, 0.1f));
+
+        if (attackOriginMalgo != null)
+        {
+            Vector3 boxPosMalgo = attackOriginMalgo.position + new Vector3(facingDir * (radiusAttackMalgo / 2), 0, 0);
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireCube(boxPosMalgo, new Vector3(radiusAttackMalgo, radiusAttackMalgo / 2, 0.1f));
+        }
+    }
+
     private void OnDrawGizmosSelected()
     {
-        if (attackOrigin != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(
-                attackOrigin.position + transform.right * (radiusAttack / 2f),
-                new Vector3(radiusAttack, radiusAttack / 2f, 1)
-            );
-        }
-
-        if (groundCheck != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-        }
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Inimigo"))
-        {
             TomarDano(1);
-            Debug.Log("Player tomou dano do inimigo!");
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("morreu")) TomarDano(1);
-        if (collision.CompareTag("prox_f2")) SceneManager.LoadScene("Fase_2");
     }
 }

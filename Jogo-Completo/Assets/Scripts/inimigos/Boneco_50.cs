@@ -1,44 +1,51 @@
-using System.Runtime.ConstrainedExecution;
+ï»¿using System.Collections;
 using UnityEngine;
-using static Unity.Burst.Intrinsics.X86;
-using System.Collections;
 
-public class Inimigo_esqueleto : MonoBehaviour
+public class Boneco_50 : MonoBehaviour, IDano
 {
+    [Header("ReferÃªncias")]
     public Transform player;
+    private Rigidbody2D rig;
+    private Animator anim;
+    private SpriteRenderer sr;
+
+    [Header("MovimentaÃ§Ã£o")]
     public float speed = 2f;
     public float chaseDistance = 4f;
 
     [Header("Ataque")]
     public float attackDistance = 1f;
     public float attackCooldown = 1.2f;
-    public int danoCausado = 1;
     private bool podeAtacar = true;
+    public GameObject hitboxAtaque;
 
-    [Header("Vida do Inimigo")]
+    [Header("Vida")]
     public int vida = 3;
     private bool morto = false;
     private bool podeTomarDano = true;
 
-    private Animator anim;
-    private Rigidbody2D rig;
-
-    // Movimento aleatório
+    // Movimento aleatÃ³rio
     private float randomMoveTime = 0f;
     private float currentDirection = 0f;
 
-    public GameObject hitboxAtaque;
 
-
+    // --------------------------------------
+    // START
+    // --------------------------------------
     void Start()
     {
-        anim = GetComponent<Animator>();
         rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
 
         if (player == null)
             player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+
+    // --------------------------------------
+    // UPDATE
+    // --------------------------------------
     void Update()
     {
         if (morto) return;
@@ -59,9 +66,13 @@ public class Inimigo_esqueleto : MonoBehaviour
         }
     }
 
+
+    // --------------------------------------
+    // PERSEGUIR PLAYER
+    // --------------------------------------
     void PerseguirPlayer()
     {
-        anim.SetInteger("transitions", 1); // ANDANDO
+        anim.SetInteger("transitions", 1);
 
         Vector2 direction = (player.position - transform.position).normalized;
         rig.linearVelocity = new Vector2(direction.x * speed, rig.linearVelocity.y);
@@ -69,7 +80,10 @@ public class Inimigo_esqueleto : MonoBehaviour
         transform.localScale = new Vector3(Mathf.Sign(direction.x), 1, 1);
     }
 
-    // === ATAQUE ===
+
+    // --------------------------------------
+    // ATAQUE
+    // --------------------------------------
     void Atacar()
     {
         rig.linearVelocity = Vector2.zero;
@@ -77,8 +91,7 @@ public class Inimigo_esqueleto : MonoBehaviour
         if (podeAtacar)
         {
             podeAtacar = false;
-
-            anim.SetInteger("transitions", 2); // ATAQUE
+            anim.SetInteger("transitions", 2);
 
             StartCoroutine(AtivarHitbox());
 
@@ -88,25 +101,27 @@ public class Inimigo_esqueleto : MonoBehaviour
 
     IEnumerator AtivarHitbox()
     {
-        yield return new WaitForSeconds(0.15f); // tempo até o golpe acertar (ajustável)
+        yield return new WaitForSeconds(0.15f);
 
         hitboxAtaque.SetActive(true);
 
-        yield return new WaitForSeconds(0.2f); // tempo ativo da hitbox
+        yield return new WaitForSeconds(0.2f);
         hitboxAtaque.SetActive(false);
     }
 
-
     void ResetarAtaque()
     {
-        anim.SetInteger("transitions", 0); // volta pro idle após atacar
+        anim.SetInteger("transitions", 0);
         podeAtacar = true;
     }
 
-    // === Movimento aleatório ===
+
+    // --------------------------------------
+    // MOVIMENTO ALEATÃ“RIO
+    // --------------------------------------
     void MovimentoAleatorio()
     {
-        anim.SetInteger("transitions", 0); // IDLE
+        anim.SetInteger("transitions", 0);
 
         randomMoveTime -= Time.deltaTime;
 
@@ -115,9 +130,7 @@ public class Inimigo_esqueleto : MonoBehaviour
             randomMoveTime = Random.Range(1f, 3f);
             int escolha = Random.Range(0, 3);
 
-            if (escolha == 0) currentDirection = 0;
-            else if (escolha == 1) currentDirection = 1;
-            else currentDirection = -1;
+            currentDirection = escolha == 0 ? 0 : (escolha == 1 ? 1 : -1);
         }
 
         rig.linearVelocity = new Vector2(currentDirection * (speed * 0.5f), rig.linearVelocity.y);
@@ -126,32 +139,47 @@ public class Inimigo_esqueleto : MonoBehaviour
             transform.localScale = new Vector3(currentDirection, 1, 1);
     }
 
-    // === Receber dano ===
-    public void TomarDano(int dano)
+
+    // -------------------------------------------------------------------
+    // === O PLAYER CHAMA ESTE MÃ‰TODO! (TakeHit) ===
+    // -------------------------------------------------------------------
+    public void TakeHit()
     {
         if (!podeTomarDano || morto) return;
 
-        vida -= dano;
-        podeTomarDano = false;
-        anim.SetTrigger("hit");
+        vida--;
+        StartCoroutine(Piscar());
 
-        Invoke(nameof(PodeTomarDanoDeNovo), 0.3f);
+        podeTomarDano = false;
+        Invoke(nameof(ResetarDano), 0.25f);
 
         if (vida <= 0)
             Morrer();
     }
 
-    void PodeTomarDanoDeNovo()
+    IEnumerator Piscar()
+    {
+        sr.color = new Color(1, 1, 1, 0.3f);
+        yield return new WaitForSeconds(0.1f);
+        sr.color = Color.white;
+    }
+
+    void ResetarDano()
     {
         podeTomarDano = true;
     }
 
+
+    // --------------------------------------
+    // MORRER
+    // --------------------------------------
     void Morrer()
     {
         morto = true;
-        anim.SetTrigger("morreu");
         rig.linearVelocity = Vector2.zero;
+
         GetComponent<Collider2D>().enabled = false;
+
         Destroy(gameObject, 0.6f);
     }
 }

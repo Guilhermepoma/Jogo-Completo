@@ -1,47 +1,141 @@
 using UnityEngine;
 
-public class Inimigo_malgo : MonoBehaviour
+public class Inimigo_malgo : MonoBehaviour, IDano
 {
-    public Transform player;        // arrasta o player aqui
-    public float speed = 3f;        // velocidade de voo
-    public float followDistance = 10f; // dist‚ncia para comeÁar a seguir
+    [Header("Vida do Inimigo")]
+    public int vida = 10;
 
-    private Animator anim;
-    private Vector3 direction;
+    [Header("Ataque do Player (somente visual do gizmo)")]
+    public Transform attackOrigin;
+    public float radiusAttack = 1.2f;
+
+    [Header("Movimento")]
+    public float speed = 3f;
+    public float hoverHeight = 3f;
+    public float changeDirTime = 2f;
+    public float diveSpeed = 7f;
+    public float diveCooldown = 5f;
+    public float ascendSpeed = 5f; // velocidade de subida ap√≥s ataque
+    public float ascendHeight = 4f; // altura que sobe ap√≥s atacar
+
+    private Rigidbody2D rig;
+    private Transform target; // agora √© refer√™ncia direta do player
+    private bool diving = false;
+    private bool ascending = false;
+    private float direction = 1f;
+    private float dirTimer = 0f;
+    private float diveTimer = 0f;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        rig = GetComponent<Rigidbody2D>();
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            target = playerObj.transform;
     }
 
     void Update()
     {
-        if (player == null) return;
+        if (vida <= 0 || target == null) return;
 
-        float dist = Vector2.Distance(transform.position, player.position);
+        dirTimer += Time.deltaTime;
+        diveTimer += Time.deltaTime;
 
-        // SÛ segue se estiver dentro do raio
-        if (dist <= followDistance)
+        if (!diving && !ascending)
         {
-            // DireÁ„o atÈ o player
-            direction = (player.position - transform.position).normalized;
+            // patrulha horizontal
+            rig.linearVelocity = new Vector2(speed * direction, 0f);
 
-            // Movimento suave
-            transform.position += direction * speed * Time.deltaTime;
+            // muda dire√ß√£o periodicamente
+            if (dirTimer >= changeDirTime)
+            {
+                direction *= -1f;
+                dirTimer = 0f;
+            }
 
-            // Virar para o lado certo sem ìrodarî
-            if (direction.x > 0)   // indo para direita
-                transform.localScale = new Vector3(1, 1, 1);
-            else if (direction.x < 0) // indo para esquerda
-                transform.localScale = new Vector3(-1, 1, 1);
+            // mant√©m altura
+            Vector3 pos = transform.position;
+            pos.y = hoverHeight;
+            transform.position = pos;
 
-            // Ativa a ˙nica animaÁ„o
-            anim.SetBool("Voando", true);
+            // verifica se pode mergulhar
+            if (diveTimer >= diveCooldown)
+            {
+                float distanceX = Mathf.Abs(target.position.x - transform.position.x);
+                if (distanceX < 5f)
+                {
+                    diving = true;
+                    diveTimer = 0f;
+                }
+            }
         }
-        else
+        else if (diving)
         {
-            // fora do alcance ó parar animaÁ„o
-            anim.SetBool("Voando", false);
+            // mergulho em dire√ß√£o ao player
+            Vector2 dir = (target.position - transform.position).normalized;
+            rig.linearVelocity = dir * diveSpeed;
+
+            if (transform.position.y <= target.position.y)
+            {
+                diving = false;
+                ascending = true;
+            }
         }
+        else if (ascending)
+        {
+            // sobe ap√≥s atacar
+            rig.linearVelocity = new Vector2(0f, ascendSpeed);
+
+            if (transform.position.y >= ascendHeight)
+            {
+                ascending = false;
+                rig.linearVelocity = Vector2.zero;
+            }
+        }
+    }
+
+    public void TakeHit()
+    {
+        vida--;
+        Debug.Log("Malgo recebeu dano! Vida: " + vida);
+
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("Malgo morreu!");
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackOrigin == null) return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(
+            attackOrigin.position + transform.right * (radiusAttack / 2),
+            new Vector3(radiusAttack, radiusAttack / 2, 0.1f)
+        );
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            var playerScript = collision.gameObject.GetComponent<PlayerRefatorado>();
+            if (playerScript != null)
+            {
+                playerScript.TomarDano(1);
+            }
+        }
+    }
+
+    // Fun√ß√£o para ser chamada quando lan√ßar a bomba
+    public void LancarBomba()
+    {
+        // l√≥gica da bomba aqui (instancia prefab, etc.)
+
+        // ap√≥s lan√ßar, sobe automaticamente
+        ascending = true;
+        diving = false;
     }
 }
