@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Inimigo_malgo : MonoBehaviour, IDano
 {
@@ -15,16 +16,17 @@ public class Inimigo_malgo : MonoBehaviour, IDano
     public float changeDirTime = 2f;
     public float diveSpeed = 7f;
     public float diveCooldown = 5f;
-    public float ascendSpeed = 5f; // velocidade de subida após ataque
-    public float ascendHeight = 4f; // altura que sobe após atacar
+    public float ascendSpeed = 5f;
+    public float ascendHeight = 4f;
 
     private Rigidbody2D rig;
-    private Transform target; // agora é referência direta do player
+    private Transform target;
     private bool diving = false;
     private bool ascending = false;
     private float direction = 1f;
     private float dirTimer = 0f;
     private float diveTimer = 0f;
+    private bool morreu = false;
 
     void Start()
     {
@@ -36,29 +38,25 @@ public class Inimigo_malgo : MonoBehaviour, IDano
 
     void Update()
     {
-        if (vida <= 0 || target == null) return;
+        if ((vida <= 0 && !morreu) || target == null) return;
 
         dirTimer += Time.deltaTime;
         diveTimer += Time.deltaTime;
 
         if (!diving && !ascending)
         {
-            // patrulha horizontal
             rig.linearVelocity = new Vector2(speed * direction, 0f);
 
-            // muda direção periodicamente
             if (dirTimer >= changeDirTime)
             {
                 direction *= -1f;
                 dirTimer = 0f;
             }
 
-            // mantém altura
             Vector3 pos = transform.position;
             pos.y = hoverHeight;
             transform.position = pos;
 
-            // verifica se pode mergulhar
             if (diveTimer >= diveCooldown)
             {
                 float distanceX = Mathf.Abs(target.position.x - transform.position.x);
@@ -71,7 +69,6 @@ public class Inimigo_malgo : MonoBehaviour, IDano
         }
         else if (diving)
         {
-            // mergulho em direção ao player
             Vector2 dir = (target.position - transform.position).normalized;
             rig.linearVelocity = dir * diveSpeed;
 
@@ -83,7 +80,6 @@ public class Inimigo_malgo : MonoBehaviour, IDano
         }
         else if (ascending)
         {
-            // sobe após atacar
             rig.linearVelocity = new Vector2(0f, ascendSpeed);
 
             if (transform.position.y >= ascendHeight)
@@ -99,11 +95,22 @@ public class Inimigo_malgo : MonoBehaviour, IDano
         vida--;
         Debug.Log("Malgo recebeu dano! Vida: " + vida);
 
-        if (vida <= 0)
+        if (vida <= 0 && !morreu)
         {
-            Destroy(gameObject);
+            morreu = true;
             Debug.Log("Malgo morreu!");
+
+            // faz ele sumir imediatamente
+            gameObject.SetActive(false);
+
+            // inicia contagem de 2 segundos para voltar ao menu
+            Invoke("VoltarMenu", 2f);
         }
+    }
+
+    private void VoltarMenu()
+    {
+        SceneManager.LoadScene("Menu"); // substitua pelo nome exato da cena do menu
     }
 
     private void OnDrawGizmosSelected()
@@ -129,12 +136,8 @@ public class Inimigo_malgo : MonoBehaviour, IDano
         }
     }
 
-    // Função para ser chamada quando lançar a bomba
     public void LancarBomba()
     {
-        // lógica da bomba aqui (instancia prefab, etc.)
-
-        // após lançar, sobe automaticamente
         ascending = true;
         diving = false;
     }
